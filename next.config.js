@@ -9,4 +9,11 @@ module.exports = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  jsc: {
+    transform: {
+      react: {
+        throwIfNamespace: false,
+      },
+    },
+  },
 };

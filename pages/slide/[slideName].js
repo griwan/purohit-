@@ -1,12 +1,20 @@
 import matter from "gray-matter";
+import { useEffect } from "react";
 import { serialize } from "next-mdx-remote/serialize";
 import { MDXRemote } from "next-mdx-remote";
 import { getFileData, getPaths } from "../../MDX";
+import { navAtom } from "../../store";
+import { useAtom } from "jotai";
 
 const Slides = ({ mdxSource, frontMatter }) => {
+  const [nav, setNav] = useAtom(navAtom);
+  const { module, section, next, prev } = frontMatter;
+  useEffect(() => {
+    setNav({ module, section, next, prev });
+  }, []);
   return (
     <>
-      <h1>{frontMatter.title}</h1>
+      <h1>{module}</h1>
       <MDXRemote {...mdxSource} />
     </>
   );

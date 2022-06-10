@@ -10,14 +10,15 @@ export default defineConfig({
   },
   attributify: true,
   shortcuts: {
-    btn: "rounded-lg border border-gray-300 text-gray-100 bg-blue-500 px-4 py-2 m-2 inline-block hover:shadow",
+    btn: "h-10 px-5 m-2 text-indigo-100 transition-colors duration-150 bg-indigo-700 rounded-lg focus:shadow-outline hover:bg-indigo-800",
   },
   theme: {
     extend: {
       colors: {
         blue: colors.sky,
-        red: colors.rose,
-        pink: colors.fuchsia,
+        red: "#A9253F",
+        pink: "#eb5e7f",
+        "light-bg": "#F0F0F0",
       },
       fontFamily: {
         sans: ["Montserrat", "sans-serif"],
