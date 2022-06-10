@@ -1,13 +1,20 @@
 import "windi.css";
 import "../styles/globals.css";
 
-import Layout from "../components/layout";
+import { MDXProvider } from "@mdx-js/react";
+import Layout from "../components/layout.jsx";
+
+import Header from "../components/header";
+
+const components = { Header };
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <MDXProvider components={components}>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </MDXProvider>
   );
 }
 

@@ -5,7 +5,6 @@ import Footer from "./footer";
 import NavButton from "./navbtn";
 
 export default function Layout({ children, ...pageProps }) {
-  console.log("--", pageProps, "--");
   return (
     <div className="flex flex-col h-screen">
       <Navbar />

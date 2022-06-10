@@ -13,10 +13,9 @@ const Slides = ({ mdxSource, frontMatter }) => {
     setNav({ module, section, next, prev });
   }, []);
   return (
-    <>
-      <h1>{module}</h1>
+    <div className="wrapper">
       <MDXRemote {...mdxSource} />
-    </>
+    </div>
   );
 };
 

@@ -5,7 +5,7 @@ import plugin from "windicss/plugin";
 
 export default defineConfig({
   extract: {
-    include: ["**/*.{js,jsx,tsx,css}"],
+    include: ["**/*.{js,jsx,tsx,css,mdx}"],
     exclude: ["node_modules", ".git", ".next"],
   },
   attributify: true,
