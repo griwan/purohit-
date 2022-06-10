@@ -1,0 +1,18 @@
+.arrow {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  -webkit-transform: rotate(-50deg);
+  border-left: none;
+  border-top: none;
+  border-right: 2px #fff solid;
+  border-bottom: 2px #fff solid;
+}
+
+.arrowleft {
+  left: -14px;
+}
+
+.arrowright {
+  right: -14px;
+}
