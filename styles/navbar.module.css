@@ -5,8 +5,8 @@
   -webkit-transform: rotate(-50deg);
   border-left: none;
   border-top: none;
-  border-right: 2px #fff solid;
-  border-bottom: 2px #fff solid;
+  border-right: 1px #fff solid;
+  border-bottom: 1px #fff solid;
 }
 
 .arrowleft {
