@@ -3,6 +3,7 @@
 import Navbar from './navbar';
 import Footer from './footer';
 import NavButton from './navbtn';
+import Section from './section';
 
 export default function Layout({ children, ...pageProps }) {
   return (

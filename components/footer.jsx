@@ -1,16 +1,16 @@
-import Image from "next/image";
-import { footerAtom } from "../store.js";
-import { useAtomValue } from "jotai";
+import Image from 'next/image';
+import { footerAtom } from '../store.js';
+import { useAtomValue } from 'jotai';
 
 const Footer = (props) => {
   const { enable, className } = useAtomValue(footerAtom);
   return (
     <footer
       className={[
-        enable ? "visible" : "invisible",
-        className || "bg-ui-light",
-        "container max-w-screen pin-b px-1 py-1 mx-auto",
-      ].join(" ")}
+        enable ? 'visible' : 'hidden',
+        className || 'bg-ui-light',
+        'container max-w-screen pin-b px-1 py-1 mx-auto',
+      ].join(' ')}
     >
       <div className="sm:justify-between sm:items-center sm:flex">
         <div className="text-center sm:text-left">
