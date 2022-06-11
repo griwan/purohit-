@@ -4,10 +4,16 @@ import { useAtomValue } from "jotai";
 
 export default function NavButton(props) {
   const { prev, next } = useAtomValue(navAtom);
+
+  const routehandler = (route) => {
+    if (route === "/") {
+      return "/";
+    } else return `/slide/${encodeURIComponent(route)}`;
+  };
   return (
     <>
       {!!prev && (
-        <Link href={`/slide/${encodeURIComponent(prev)}`}>
+        <Link href={routehandler(prev)}>
           <div className="next bg-red rounded-full absolute left-50px bottom-40px h-80px w-80px">
             <svg
               id="Group_12"
@@ -37,7 +43,7 @@ export default function NavButton(props) {
         </Link>
       )}
       {!!next && (
-        <Link href={`/slide/${encodeURIComponent(next)}`}>
+        <Link href={routehandler(next)}>
           <div className="prev bg-red rounded-full absolute right-50px bottom-40px">
             <svg
               xmlns="http://www.w3.org/2000/svg"

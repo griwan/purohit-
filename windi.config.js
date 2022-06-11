@@ -18,7 +18,7 @@ export default defineConfig({
         blue: colors.sky,
         red: "#A9253F",
         pink: "#eb5e7f",
-        "light-bg": "#F0F0F0",
+        "ui-light": "#F0F0F0",
       },
       fontFamily: {
         sans: ["Montserrat", "sans-serif"],
