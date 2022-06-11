@@ -7,8 +7,10 @@ import Layout from '../components/layout.jsx';
 
 import Header from '../components/header';
 import MdxFooter from '../components/mdxfooter';
+import List from '../components/list';
+import SingleLayout from '../components/singlelayout';
 
-const components = { Header, MdxFooter };
+const components = { Header, MdxFooter, List, SingleLayout };
 
 function MyApp({ Component, pageProps }) {
   return (
