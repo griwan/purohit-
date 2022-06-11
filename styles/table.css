@@ -1,0 +1,41 @@
+.table {
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.row div:nth-child(1) {
+  text-align: left;
+}
+
+.table .header,
+.table .row {
+  display: flex;
+}
+
+.table .header div,
+.table .row div {
+  flex: 1;
+  padding: 0.2rem 0.4em;
+  border: none;
+  border-right: 2px solid white;
+}
+
+.table .row:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+.table .header div {
+  cursor: pointer;
+  color: #a9253f;
+  border: none;
+  border-bottom: 2px solid #a9253f;
+  margin-right: 2px;
+  justify-content: center;
+}
+
+.table span {
+  margin-left: 10px;
+  font-size: 12px;
+}
