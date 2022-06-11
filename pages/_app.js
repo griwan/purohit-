@@ -1,10 +1,11 @@
-import "windi.css";
-import "../styles/globals.css";
+import 'windi.css';
+import '../styles/globals.css';
+import '../styles/table.css';
 
-import { MDXProvider } from "@mdx-js/react";
-import Layout from "../components/layout.jsx";
+import { MDXProvider } from '@mdx-js/react';
+import Layout from '../components/layout.jsx';
 
-import Header from "../components/header";
+import Header from '../components/header';
 
 const components = { Header };
 
