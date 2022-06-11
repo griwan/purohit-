@@ -1,13 +1,13 @@
-import classNames from 'classnames';
-import Image from 'next/image';
+import classNames from "classnames";
+import Image from "next/image";
 
 const MdxFooter = (props) => {
   return (
     <footer
       className={classNames(
-        'bg-ui-light',
-        'container max-w-screen pin-b px-1 py-1 mx-auto',
-        'fixed bottom-0'
+        "bg-ui-light",
+        "container max-w-screen pin-b px-1 py-1 mx-auto",
+        "fixed bottom-0"
       )}
     >
       <div className="sm:justify-between sm:items-center sm:flex">

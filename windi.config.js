@@ -20,6 +20,8 @@ export default defineConfig({
         pink: "#eb5e7f",
         "ui-light": "#F0F0F0",
         "ui-text": "#707070",
+        "ui-cyan": "#557996",
+        "ui-gray": "#333333",
       },
       fontFamily: {
         sans: ["Montserrat", "sans-serif"],

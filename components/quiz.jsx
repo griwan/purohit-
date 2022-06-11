@@ -106,7 +106,7 @@ export default function Quiz(props) {
                     width={46}
                     alt="radio"
                   />
-                  <label p="l-17px" font="30px">
+                  <label p="l-1rem" font="2xl">
                     {option}
                   </label>
                 </div>
@@ -119,7 +119,7 @@ export default function Quiz(props) {
               alt="quiz"
               width={203}
               height={207}
-              className="absolute top-20px left-20px"
+              className="absolute top-1rem left-1rem"
             />
           </div>
         </div>

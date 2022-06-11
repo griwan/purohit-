@@ -23,3 +23,7 @@ a {
 [type="radio"] + img {
   cursor: pointer;
 }
+
+.wrapper {
+  height: calc(100% - 4rem);
+}
