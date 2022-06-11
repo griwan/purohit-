@@ -9,8 +9,9 @@ import Header from '../components/header';
 import MdxFooter from '../components/mdxfooter';
 import List from '../components/list';
 import SingleLayout from '../components/singlelayout';
+import Quiz from '../components/quiz';
 
-const components = { Header, MdxFooter, List, SingleLayout };
+const components = { Header, MdxFooter, Quiz, List, SingleLayout };
 
 function MyApp({ Component, pageProps }) {
   return (

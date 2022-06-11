@@ -15,7 +15,7 @@ const Slides = ({ mdxSource, frontMatter }) => {
     setFooter({ enable: footer, className: "" });
   }, [module, next, prev, section, setNav, setFooter, footer]);
   return (
-    <div className="wrapper">
+    <div className="wrapper h-full">
       <MDXRemote {...mdxSource} />
     </div>
   );
