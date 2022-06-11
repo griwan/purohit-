@@ -14,3 +14,12 @@ a {
 * {
   box-sizing: border-box;
 }
+
+[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+
+[type="radio"] + img {
+  cursor: pointer;
+}
