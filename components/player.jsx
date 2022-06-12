@@ -16,7 +16,7 @@ import { useRef } from "react";
 function VPlayer(props) {
   const player = useRef(null);
   return (
-    <div className="w-33vw mx-auto pt-5">
+    <div className="w-36vw mx-auto pt-5">
       <Player ref={player}>
         <Video crossOrigin="">
           <source data-src={props.src} type="video/mp4" />
@@ -30,7 +30,7 @@ function VPlayer(props) {
           </Controls>
 
           <Controls pin="center" justify="center">
-            <PlaybackControl hideTooltip style={{ "--vm-control-scale": 3 }} />
+            <PlaybackControl hideTooltip style={{ "--vm-control-scale": 4 }} />
           </Controls>
 
           <Controls fullWidth pin="bottomLeft" hideWhenPaused>

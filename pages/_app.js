@@ -14,7 +14,6 @@ import MdxFooter from "../components/mdxfooter";
 import List from "../components/list";
 import Quiz from "../components/quiz";
 import Section from "../components/section";
-import DoubleLayout from "../components/doublelayout";
 import Table from "../components/table";
 import SubHeader from "../components/subheader";
 import StickyPicture from "../components/stickypicture";
@@ -25,6 +24,13 @@ const VPlayer = dynamic(import("../components/player"), {
 });
 
 const SingleLayout = dynamic(() => import("../components/singlelayout"), {
+  ssr: false,
+});
+const DoubleLayout = dynamic(() => import("../components/doublelayout"), {
+  ssr: false,
+});
+
+const PotatoLayout = dynamic(() => import("../components/potatolayout"), {
   ssr: false,
 });
 
@@ -41,6 +47,7 @@ const components = {
   StickyPicture,
   VPlayer,
   Image,
+  PotatoLayout,
 };
 
 function MyApp({ Component, pageProps }) {
