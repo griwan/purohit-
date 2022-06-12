@@ -1,9 +1,10 @@
 import Image from "next/image";
-import { footerAtom } from "../store.js";
+import { footerAtom, navBehavior } from "../store.js";
 import { useAtomValue } from "jotai";
 
 const Footer = (props) => {
   const { enable, className, content, defaults } = useAtomValue(footerAtom);
+  const { forward } = useAtomValue(navBehavior);
   return (
     <footer
       className={[
@@ -19,7 +20,7 @@ const Footer = (props) => {
           <div
             className="text-center"
             dangerouslySetInnerHTML={{
-              __html: content,
+              __html: forward ? content : "",
             }}
           />
         )}

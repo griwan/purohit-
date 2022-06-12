@@ -11,7 +11,7 @@ export default function Quiz(props) {
   const [answered, setAnswered] = useState(false);
 
   const itemsRef = useRef([]);
-  var optionsArray = options.split(",");
+  var optionsArray = options.split("\n");
 
   useEffect(() => {
     itemsRef.current = itemsRef.current.slice(0, optionsArray.length);
