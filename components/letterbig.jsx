@@ -1,9 +1,15 @@
-import React from 'react';
+import classNames from "classnames";
+import React from "react";
 
 const LetterBig = (props) => {
-  const letters = props.letters.split('');
+  const letters = props.letters.split("");
   return (
-    <div className={`"text-red font-serif text-red text-8.3rem mt-4rem`}>
+    <div
+      className={classNames("font-serif text-8.3rem mt-4rem", {
+        "text-red": props.red,
+        "text-ui-cyan": props.cyan,
+      })}
+    >
       <div className="flex justify-center ml-4rem">
         {letters.map((letter, index) => (
           <span className="mr-4rem" key={index}>

@@ -18,7 +18,7 @@ const Footer = (props) => {
           <Image src="/cvs_pharmacy.png" alt="logo" width={255} height={33} />
         ) : (
           <div
-            className="text-center"
+            className="text-left"
             dangerouslySetInnerHTML={{
               __html: forward ? content : "",
             }}
