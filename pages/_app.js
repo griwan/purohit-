@@ -15,6 +15,7 @@ import List from '../components/list';
 import Quiz from '../components/quiz';
 import Section from '../components/section';
 import Table from '../components/table';
+import BigTable from '../components/bigtable';
 import SubHeader from '../components/subheader';
 import StickyPicture from '../components/stickypicture';
 import LetterBig from '../components/letterbig';
@@ -46,6 +47,7 @@ const components = {
   Section,
   DoubleLayout,
   Table,
+  BigTable,
   SubHeader,
   StickyPicture,
   VPlayer,
