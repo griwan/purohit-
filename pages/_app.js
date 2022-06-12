@@ -14,6 +14,7 @@ import Section from '../components/section';
 import DoubleLayout from '../components/doublelayout';
 import Table from '../components/table';
 import SubHeader from '../components/subheader';
+import StickyPicture from '../components/stickypicture';
 
 const components = {
   Header,
@@ -25,6 +26,7 @@ const components = {
   DoubleLayout,
   Table,
   SubHeader,
+  StickyPicture,
 };
 
 function MyApp({ Component, pageProps }) {
