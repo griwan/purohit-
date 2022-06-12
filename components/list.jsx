@@ -1,13 +1,20 @@
-import Image from "next/image";
-import React from "react";
+import Image from 'next/image';
+import React from 'react';
 
-const List = ({ type = "simple", list }) => {
-  const topics = list.split("\n");
+const List = ({ type = 'simple', list, fontSize, color }) => {
+  const topics = list.split('\n');
   const simpleList = () => (
     <ul className="list-outside list-disc ml-6">
       {topics.map((topic, index) => (
-        <li className="text-[#A9253F]" key={index}>
-          <span className="text-gray-500 text-[20px]">{topic}</span>
+        <li className="text-[#A9253F] mb-4 list-disc" key={index}>
+          <span
+            className={
+              'text-gray-500 ml-2 font-sans ' +
+              (String(fontSize) ? String(fontSize) : 'text-[1.5rem]')
+            }
+          >
+            {topic}
+          </span>
         </li>
       ))}
     </ul>
@@ -16,13 +23,13 @@ const List = ({ type = "simple", list }) => {
   const numberedList = () => (
     <ul>
       {topics.map((topic, index) => (
-        <li className="text-[#A9253F] flex items-center py-1" key={index}>
+        <li className="text-[#A9253F] flex items-center mb-4" key={index}>
           <div>
-            <span className="h-[35px] w-[35px] bg-[#A9253F] text-white inline-block rounded-full my-2 text-center flex items-center justify-center">
+            <span className="h-[57px] w-[57px] bg-[#A9253F] text-white text-[2.18rem] font-serif leading-10 inline-block rounded-full my-2 text-center flex items-center justify-center">
               {index + 1}
             </span>
           </div>
-          <span className="text-gray-500 text-1rem lg:text-1.5rem ml-2">
+          <span className="text-gray-500 text-[1.875rem] ml-4 leading-9 font-sans font-medium">
             {topic}
           </span>
         </li>
@@ -31,27 +38,34 @@ const List = ({ type = "simple", list }) => {
   );
 
   const tickedList = () => (
-    <ul>
+    <div>
       {topics.map((topic, index) => (
-        <li className="flex align-center ml-1 my-1" key={index}>
-          <Image
-            src={`${color === "red" ? "/redtick.svg" : "/tabletick.svg"}`}
-            width={25}
-            height={25}
-            alt="tick"
-          />
-          <span className="text-gray-500 ml-1 text-[20px]">{topic}</span>
-        </li>
+        <div className="inline-table align-center ml-1 my-1" key={index}>
+          <span className="align-middle table-cell w-12 h-12">
+            <img
+              src={color && color === 'red' ? '/redtick.svg' : '/tabletick.svg'}
+              alt="tick"
+            />
+          </span>
+          <span
+            className={
+              'align-middle table-cell pl-5 text-[1.5rem] font-sans leading-9 ' +
+              (color && color === 'red' ? 'text-red' : 'text-ui-blue')
+            }
+          >
+            {topic}
+          </span>
+        </div>
       ))}
-    </ul>
+    </div>
   );
 
   switch (type) {
-    case "simple":
+    case 'simple':
       return simpleList();
-    case "numbered":
+    case 'numbered':
       return numberedList();
-    case "ticked":
+    case 'ticked':
       return tickedList();
     default:
       return simpleList();

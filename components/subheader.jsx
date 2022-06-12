@@ -2,7 +2,7 @@ import React from 'react';
 
 const SubHeader = (props) => {
   return (
-    <div className="flex justify-center text-[#707070] m-4 text-[20px]">
+    <div className="flex justify-center text-[#707070] mt-[4.5rem] text-[30px] font-sans">
       {props.children}
     </div>
   );

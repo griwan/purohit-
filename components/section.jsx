@@ -1,25 +1,25 @@
-import Image from "next/image";
-import React from "react";
+import Image from 'next/image';
+import React from 'react';
 
 const Section = ({ section }) => {
   const contents = {
     section1: {
-      title: "Section 1",
-      heading: "UNDERSTANDING HIV and STIs",
-      image: "/section1.png",
-      color: "#557996",
+      title: 'Section 1',
+      heading: 'UNDERSTANDING HIV and STIs',
+      image: '/section1.png',
+      color: '#557996',
     },
     section2: {
-      title: "Section 2",
-      heading: "THE BASICS OF HIV AND STI TESTING",
-      image: "/section2.png",
-      color: "#557996",
+      title: 'Section 2',
+      heading: 'THE BASICS OF HIV AND STI TESTING',
+      image: '/section2.png',
+      color: '#557996',
     },
     section3: {
-      title: "Section 3",
-      heading: "HIGHLIGHTING THE NEED FOR HIV TESTING",
-      image: "/section3.png",
-      color: "#557996",
+      title: 'Section 3',
+      heading: 'HIGHLIGHTING THE NEED FOR HIV TESTING',
+      image: '/section3.png',
+      color: '#557996',
     },
   };
 
@@ -33,7 +33,7 @@ const Section = ({ section }) => {
       <div
         className={`flex flex-col flex-1 justify-center items-center w-full ${color}`}
       >
-        <div className="flex-1 text-white text-[3.875rem] flex items-center font-sans">
+        <div className="flex-1 text-white text-[3.875rem] flex items-end font-sans mb-16">
           {title}
         </div>
         <div className="flex-1 text-white text-[4.563rem] font-medium font-serif text-center">
