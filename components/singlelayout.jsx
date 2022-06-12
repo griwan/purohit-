@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
 const SingleLayout = (props) => {
   return (
-    <div className="flex justify-center">
-      <div className="max-w-5xl">{props.children}</div>
+    <div className="flex justify-center items-center">
+      <div className="w-full md:max-w-[80%]">{props.children}</div>
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import Image from "next/image";
 import classNames from "classnames";
 import { navAtom, navBehavior } from "../store.js";
 import { useAtomValue, useAtom } from "jotai";
@@ -19,15 +20,13 @@ export default function NavButton(props) {
     <>
       {!!prev && (
         <div
-          className="next text-red rounded-full absolute left-50px bottom-40px h-80px w-80px z-10"
+          className="next text-red rounded-full absolute left-50px bottom-40px h-50px w-50px lg:h-79px lg:w-79px z-10"
           onClick={() => routehandler(prev, 0)}
         >
           <svg
             id="Group_12"
             data-name="Group 12"
             xmlns="http://www.w3.org/2000/svg"
-            width="79"
-            height="79"
             viewBox="0 0 79 79"
           >
             <circle
@@ -51,7 +50,7 @@ export default function NavButton(props) {
       {!!next && (
         <div
           className={classNames(
-            "next rounded-full absolute right-50px bottom-40px h-80px w-80px z-10",
+            "next rounded-full absolute right-50px bottom-40px h-50px w-50px lg:h-79px lg:w-79px z-10",
             {
               "text-red": behavior.forward,
               "text-[#CCCCCC]": !behavior.forward,
@@ -59,12 +58,7 @@ export default function NavButton(props) {
           )}
           onClick={() => routehandler(next, 1)}
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="79"
-            height="79"
-            viewBox="0 0 79 79"
-          >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 79 79">
             <g
               id="Group_11"
               data-name="Group 11"

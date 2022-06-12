@@ -3,7 +3,7 @@ import { footerAtom } from "../store.js";
 import { useAtomValue } from "jotai";
 
 const Footer = (props) => {
-  const { enable, className } = useAtomValue(footerAtom);
+  const { enable, className, content, defaults } = useAtomValue(footerAtom);
   return (
     <footer
       className={[
@@ -13,10 +13,16 @@ const Footer = (props) => {
       ].join(" ")}
     >
       <div className="flex justify-between items-center px-10">
-        <div className="text-center">
+        {defaults ? (
           <Image src="/cvs_pharmacy.png" alt="logo" width={255} height={33} />
-        </div>
-
+        ) : (
+          <div
+            className="text-center"
+            dangerouslySetInnerHTML={{
+              __html: content,
+            }}
+          />
+        )}
         <div className="gap-4 mt-4">
           <Image
             src="/Gilead_HIV_2020_RedGrey.png"
