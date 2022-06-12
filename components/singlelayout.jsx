@@ -1,11 +1,9 @@
-import React from "react";
-
-const SingleLayout = (props) => {
+export default function SingleLayout(props) {
   return (
-    <div className="flex justify-center items-center">
-      <div className="w-full md:max-w-[80%]">{props.children}</div>
+    <div className="flex justify-center items-center gap-2">
+      <div className="w-full md:max-w-[80%] text-center p-1rem md:p-2rem">
+        {props.children}
+      </div>
     </div>
   );
-};
-
-export default SingleLayout;
+}

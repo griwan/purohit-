@@ -11,7 +11,7 @@ export default function Home() {
     setCount({
       module: "Home",
       section: false,
-      next: "first-blog",
+      next: "INTRO-1",
       prev: false,
     });
     setFooter({ enable: true, className: "bg-white", defaults: true });

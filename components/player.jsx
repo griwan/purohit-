@@ -2,7 +2,6 @@ import {
   Player,
   Video,
   DefaultUi,
-  DefaultControls,
   PlaybackControl,
   Controls,
   Scrim,
@@ -10,17 +9,17 @@ import {
   MuteControl,
   TimeProgress,
   ScrubberControl,
+  FullscreenControl,
 } from "@vime/react";
 import { useRef } from "react";
 
-function VPlayer() {
+function VPlayer(props) {
   const player = useRef(null);
-  console.log(player);
   return (
-    <div className="h-max-100">
+    <div className="w-33vw mx-auto pt-5">
       <Player ref={player}>
         <Video crossOrigin="">
-          <source data-src="/Help_Stop_the_Virus.mp4" type="video/mp4" />
+          <source data-src={props.src} type="video/mp4" />
         </Video>
         <DefaultUi noControls>
           <Scrim />
@@ -31,12 +30,13 @@ function VPlayer() {
           </Controls>
 
           <Controls pin="center" justify="center">
-            <PlaybackControl hideTooltip style={{ "--vm-control-scale": 5 }} />
+            <PlaybackControl hideTooltip style={{ "--vm-control-scale": 3 }} />
           </Controls>
 
           <Controls fullWidth pin="bottomLeft" hideWhenPaused>
             <ControlSpacer />
             <TimeProgress />
+            <FullscreenControl />
           </Controls>
           <Controls fullWidth hideWhenPaused>
             <ScrubberControl />
