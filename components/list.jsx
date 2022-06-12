@@ -29,7 +29,7 @@ const List = ({ type = 'simple', list, fontSize, color }) => {
               {index + 1}
             </span>
           </div>
-          <span className="text-gray-500 text-[1.875rem] ml-4 leading-9 font-sans font-medium">
+          <span className="text-gray-500 text-[1.875rem] ml-4 leading-9 font-sans font-medium text-left">
             {topic}
           </span>
         </li>
