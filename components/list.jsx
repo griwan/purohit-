@@ -6,10 +6,10 @@ const List = ({ type = 'simple', list, fontSize, color }) => {
   const simpleList = () => (
     <ul className="list-outside list-disc ml-6">
       {topics.map((topic, index) => (
-        <li className="text-[#A9253F] mb-4 list-disc" key={index}>
+        <li className="text-[#A9253F] mb-4 list-disc text-left" key={index}>
           <span
             className={
-              'text-gray-500 ml-2 font-sans ' +
+              'text-gray-500 ml-2 font-sans' +
               (String(fontSize) ? String(fontSize) : 'text-[1.5rem]')
             }
           >
