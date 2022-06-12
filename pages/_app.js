@@ -17,7 +17,6 @@ import Section from '../components/section';
 import Table from '../components/table';
 import BigTable from '../components/bigtable';
 import SubHeader from '../components/subheader';
-import StickyPicture from '../components/stickypicture';
 import LetterBig from '../components/letterbig';
 import LetterSmall from '../components/lettersmall';
 import HIV from '../components/hiv';
@@ -35,6 +34,10 @@ const DoubleLayout = dynamic(() => import('../components/doublelayout'), {
 });
 
 const PotatoLayout = dynamic(() => import('../components/potatolayout'), {
+  ssr: false,
+});
+
+const StickyPicture = dynamic(() => import('../components/stickypicture'), {
   ssr: false,
 });
 

@@ -1,16 +1,16 @@
-import Image from 'next/image';
-import React from 'react';
+import Image from "next/image";
+import React from "react";
 
-const List = ({ type = 'simple', list, fontSize, color }) => {
-  const topics = list.split('\n');
+const List = ({ type = "simple", list, fontSize, color }) => {
+  const topics = list.split("\n");
   const simpleList = () => (
     <ul className="list-outside list-disc ml-6">
       {topics.map((topic, index) => (
         <li className="text-[#A9253F] mb-4 list-disc text-left" key={index}>
           <span
             className={
-              'text-gray-500 ml-2 font-sans' +
-              (String(fontSize) ? String(fontSize) : 'text-[1.5rem]')
+              "text-gray-500 ml-2 font-sans " +
+              (String(fontSize) ? String(fontSize) : "text-[1.5rem]")
             }
           >
             {topic}
@@ -43,14 +43,14 @@ const List = ({ type = 'simple', list, fontSize, color }) => {
         <div className="inline-table align-center ml-1 my-1" key={index}>
           <span className="align-middle table-cell w-12 h-12">
             <img
-              src={color && color === 'red' ? '/redtick.svg' : '/tabletick.svg'}
+              src={color && color === "red" ? "/redtick.svg" : "/tabletick.svg"}
               alt="tick"
             />
           </span>
           <span
             className={
-              'align-middle table-cell pl-5 text-[1.5rem] font-sans leading-9 ' +
-              (color && color === 'red' ? 'text-red' : 'text-ui-blue')
+              "align-middle table-cell pl-5 text-[1.5rem] font-sans leading-9 " +
+              (color && color === "red" ? "text-red" : "text-ui-blue")
             }
           >
             {topic}
@@ -61,11 +61,11 @@ const List = ({ type = 'simple', list, fontSize, color }) => {
   );
 
   switch (type) {
-    case 'simple':
+    case "simple":
       return simpleList();
-    case 'numbered':
+    case "numbered":
       return numberedList();
-    case 'ticked':
+    case "ticked":
       return tickedList();
     default:
       return simpleList();
