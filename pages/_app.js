@@ -7,6 +7,7 @@ import { Suspense } from "react";
 import dynamic from "next/dynamic";
 import { MDXProvider } from "@mdx-js/react";
 import Layout from "../components/layout.jsx";
+import Image from "next/image";
 
 import Header from "../components/header";
 import MdxFooter from "../components/mdxfooter";
@@ -39,6 +40,7 @@ const components = {
   SubHeader,
   StickyPicture,
   VPlayer,
+  Image,
 };
 
 function MyApp({ Component, pageProps }) {
