@@ -3,6 +3,7 @@ import '../styles/globals.css';
 import '../styles/table.css';
 import '@vime/core/themes/default.css';
 
+import Image from 'next/image';
 import dynamic from 'next/dynamic';
 import { MDXProvider } from '@mdx-js/react';
 import Layout from '../components/layout.jsx';
@@ -35,6 +36,7 @@ const components = {
   SubHeader,
   StickyPicture,
   VPlayer,
+  Image,
 };
 
 function MyApp({ Component, pageProps }) {
