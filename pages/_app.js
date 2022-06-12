@@ -20,6 +20,7 @@ import SubHeader from '../components/subheader';
 import LetterBig from '../components/letterbig';
 import LetterSmall from '../components/lettersmall';
 import HIV from '../components/hiv';
+import DoubleColumn from '../components/DoubleColumn';
 
 const VPlayer = dynamic(import('../components/player'), {
   ssr: false,
@@ -41,6 +42,10 @@ const StickyPicture = dynamic(() => import('../components/stickypicture'), {
   ssr: false,
 });
 
+const Container = dynamic(() => import('../components/container'), {
+  ssr: false,
+});
+
 const components = {
   Header,
   MdxFooter,
@@ -59,6 +64,8 @@ const components = {
   LetterBig,
   LetterSmall,
   HIV,
+  Container,
+  DoubleColumn,
 };
 
 function MyApp({ Component, pageProps }) {
