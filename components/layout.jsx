@@ -1,9 +1,8 @@
 // components/layout.js
 
-import Navbar from "./navbar";
-import Footer from "./footer";
-import NavButton from "./navbtn";
-import Section from "./section";
+import Navbar from './navbar';
+import Footer from './footer';
+import NavButton from './navbtn';
 
 export default function Layout({ children, ...pageProps }) {
   return (
