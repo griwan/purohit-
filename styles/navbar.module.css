@@ -1,8 +1,9 @@
 .arrow {
+  margin-left: -10px;
   position: relative;
-  width: 28px;
-  height: 28px;
-  -webkit-transform: rotate(-50deg);
+  width: 50px;
+  height: 50px;
+  -webkit-transform: rotate(-45deg);
   border-left: none;
   border-top: none;
   border-right: 1px #fff solid;
@@ -14,5 +15,5 @@
 }
 
 .arrowright {
-  right: -14px;
+  right: -25px;
 }

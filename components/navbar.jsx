@@ -2,14 +2,9 @@ import classNames from 'classnames';
 import styles from '../styles/navbar.module.css';
 import { navAtom } from '../store';
 import { useAtom, useAtomValue } from 'jotai';
-import { useEffect } from 'react';
 
 export default function NavBar() {
   const { prev, next, module, section } = useAtomValue(navAtom);
-
-  useEffect(() => {
-    console.log('[ nav ] >', next, prev, module, section);
-  }, []);
 
   // intro class start
   let introClass = classNames(
@@ -46,7 +41,7 @@ export default function NavBar() {
     <div className={moduleClass}>
       <div className={introClassArrow}></div>
       <section className="flex flex-1 justify-center"></section>
-      <section className="flex flex-1 justify-center">Module A</section>
+      <section className="flex flex-1 justify-center">MODULE A</section>
       <section className="flex flex-1 justify-center"></section>
       <div className={moduleClassArrow}></div>
     </div>
@@ -90,7 +85,9 @@ export default function NavBar() {
             'bg-gray-500': section !== 2,
           })}
         ></div>
-        <section className="flex flex-1 justify-center">Section 3</section>
+        <section className="flex flex-1 justify-center font-bold">
+          Section 3
+        </section>
         <div
           className={classNames({
             [styles.arrow]: true,
@@ -107,7 +104,7 @@ export default function NavBar() {
     <div className={moduleBClass}>
       {/* <div className={introClassArrowRight}></div> */}
       <section className="flex flex-1 justify-center"></section>
-      <section className="flex flex-1 justify-center">Module B</section>
+      <section className="flex flex-1 justify-center">MODULE B</section>
       <section className="flex flex-1 justify-center"></section>
       <div className={moduleBClassArrow}></div>
     </div>
@@ -166,7 +163,7 @@ export default function NavBar() {
 
   return (
     <>
-      <div className="flex text-white h-10">
+      <div className="flex text-white h-[4.5rem] text-1.25rem leading-6 font-sans">
         <div className={introClass}>Intro</div>
         {(section >= 4 || module) && <ModuleA />}
         {!module && section < 4 && <ModuleASection />}
