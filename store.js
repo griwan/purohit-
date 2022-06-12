@@ -15,7 +15,9 @@ export const navBehavior = atom({
 
 export const footerAtom = atom({
   enable: false,
+  defaults: false,
   className: "",
+  content: "",
 });
 
 export const DebugAtoms = () => {

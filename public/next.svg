@@ -1,0 +1,29 @@
+<svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="79"
+            height="79"
+            viewBox="0 0 79 79"
+          >
+            <g
+              id="Group_11"
+              data-name="Group 11"
+              transform="translate(-4507 -712)"
+            >
+              <circle
+                id="Ellipse_1"
+                data-name="Ellipse 1"
+                cx="39.5"
+                cy="39.5"
+                r="39.5"
+                transform="translate(4507 712)"
+                fill="currentColor"
+              />
+              <path
+                id="Polygon_3"
+                data-name="Polygon 3"
+                d="M20,0,40,34H0Z"
+                transform="translate(4567 732) rotate(90)"
+                fill="#fff"
+              />
+            </g>
+          </svg>
