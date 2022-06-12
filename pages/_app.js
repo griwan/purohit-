@@ -17,6 +17,8 @@ import Section from "../components/section";
 import Table from "../components/table";
 import SubHeader from "../components/subheader";
 import StickyPicture from "../components/stickypicture";
+import LetterBig from "../components/letterbig";
+import LetterSmall from "../components/lettersmall";
 
 const VPlayer = dynamic(import("../components/player"), {
   ssr: false,
@@ -48,6 +50,8 @@ const components = {
   VPlayer,
   Image,
   PotatoLayout,
+  LetterBig,
+  LetterSmall,
 };
 
 function MyApp({ Component, pageProps }) {

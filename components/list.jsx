@@ -6,10 +6,10 @@ const List = ({ type = 'simple', list, fontSize, color }) => {
   const simpleList = () => (
     <ul className="list-outside list-disc ml-6">
       {topics.map((topic, index) => (
-        <li className="text-[#A9253F] mb-4 list-disc" key={index}>
+        <li className="text-[#A9253F] mb-4 list-disc text-left" key={index}>
           <span
             className={
-              'text-gray-500 ml-2 font-sans ' +
+              'text-gray-500 ml-2 font-sans' +
               (String(fontSize) ? String(fontSize) : 'text-[1.5rem]')
             }
           >
@@ -29,7 +29,7 @@ const List = ({ type = 'simple', list, fontSize, color }) => {
               {index + 1}
             </span>
           </div>
-          <span className="text-gray-500 text-[1.875rem] ml-4 leading-9 font-sans font-medium">
+          <span className="text-gray-500 text-[1.875rem] ml-4 leading-9 font-sans font-medium text-left">
             {topic}
           </span>
         </li>
