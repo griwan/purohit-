@@ -3,7 +3,7 @@ import React from 'react';
 
 const List = ({
   type = 'simple',
-  list = [],
+  list = '',
   fontSize,
   color,
   listArr = [],
