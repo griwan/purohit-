@@ -33,6 +33,7 @@ import ThreeText from '../components/threetext';
 import HivChart from '../components/hivchart';
 import SideListPicture from '../components/SideListPicture';
 import CulturalHumility from '../components/cultural';
+import HIVReturns from '../components/SecondHIV';
 
 const VPlayer = dynamic(import('../components/player'), {
   ssr: false,
@@ -94,6 +95,7 @@ const components = {
   HivChart,
   SideListPicture,
   CulturalHumility,
+  HIVReturns,
 };
 
 function MyApp({ Component, pageProps }) {
