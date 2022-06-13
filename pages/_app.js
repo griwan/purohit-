@@ -28,6 +28,9 @@ import SecondGrid from '../components/secondgrid';
 import ThreeColumnList from '../components/threecolumnlist';
 import ThreeText from '../components/threetext';
 import SideListPicture from '../components/SideListPicture';
+import TriplePrep from '../components/tripleprep';
+import TreatmentTools from '../components/treatmenttools';
+import MAS38 from '../components/mas38';
 
 const VPlayer = dynamic(import('../components/player'), {
   ssr: false,
@@ -81,6 +84,9 @@ const components = {
   EndScreen,
   Grid,
   SecondGrid,
+  TriplePrep,
+  TreatmentTools,
+  MAS38,
   ThreeColumnList,
   ThreeText,
   SideListPicture,
