@@ -1,7 +1,13 @@
 import Image from 'next/image';
 import React from 'react';
 
-const List = ({ type = 'simple', list, fontSize, color, listArr }) => {
+const List = ({
+  type = 'simple',
+  list = [],
+  fontSize,
+  color,
+  listArr = [],
+}) => {
   let mdxtopics = [];
   if (list) {
     mdxtopics = list.split('\n');
