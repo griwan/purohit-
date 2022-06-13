@@ -23,6 +23,8 @@ import DoubleColumn from "../components/DoubleColumn";
 import FourWay from "../components/fourway";
 import EndScreen from "../components/endscreen";
 import { TextBlock } from "../components/textblocks";
+import Grid from "../components/grid";
+import SecondGrid from "../components/secondgrid";
 
 const VPlayer = dynamic(import("../components/player"), {
   ssr: false,
@@ -74,6 +76,8 @@ const components = {
   TextBlock,
   FourWay,
   EndScreen,
+  Grid,
+  SecondGrid,
 };
 
 function MyApp({ Component, pageProps }) {
