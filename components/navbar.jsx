@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import classNames from 'classnames';
 import styles from '../styles/navbar.module.css';
 import { navAtom } from '../store';
@@ -5,6 +6,10 @@ import { useAtom, useAtomValue } from 'jotai';
 
 export default function NavBar() {
   const { prev, next, module, section } = useAtomValue(navAtom);
+
+  useEffect(() => {
+    console.log(module, section);
+  }, [module, section]);
 
   // intro class start
   let introClass = classNames(
@@ -170,7 +175,7 @@ export default function NavBar() {
     </div>
   );
 
-  if (module === 2 || (section > 1 && section < 4)) {
+  if (module === 2 || (section >= 1 && section < 4)) {
     return (
       <>
         <div className="flex text-white h-[4.5rem] text-1.25rem leading-6 font-sans">
