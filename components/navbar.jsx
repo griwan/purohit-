@@ -124,41 +124,41 @@ export default function NavBar() {
   const ModuleBSection = () => (
     <div className={classNames('flex-1 flex justify-center')}>
       <div
-        className={classNames('flex items-center flex-1 bg-[#557997]', {
-          'bg-[#838383]': section !== 4,
+        className={classNames('flex items-center flex-1 bg-[#C26578]', {
+          'bg-[#5A5A5A]': section !== 4,
         })}
       >
         <div className={introClassArrowMB}></div>
         <section className="flex flex-1 justify-center">Section 4</section>
       </div>
       <div
-        className={classNames('flex items-center flex-1 bg-[#476A8A]', {
-          'bg-[#767676]': section !== 5,
+        className={classNames('flex items-center flex-1 bg-[#B5445B]', {
+          'bg-[#4C4C4C]': section !== 5,
         })}
       >
         <div
           className={classNames({
             [styles.arrow]: true,
             [styles.arrowleft]: true,
-            'bg-[#557997]': module === 3,
-            'bg-[#557997]': section === 4,
-            'bg-[#838383]': section !== 4,
+            'bg-[#C26578]': module === 3,
+            'bg-[#C26578]': section === 4,
+            'bg-[#5A5A5A]': section !== 4,
           })}
         ></div>
         <section className="flex flex-1 justify-center">Section 5</section>
       </div>
       <div
-        className={classNames('flex items-center flex-1 bg-[#395C7E]', {
-          'bg-[#6A6A6A]': section !== 6,
+        className={classNames('flex items-center flex-1 bg-[#A9253F]', {
+          'bg-[#3E3E3E]': section !== 6,
         })}
       >
         <div
           className={classNames({
             [styles.arrow]: true,
             [styles.arrowleft]: true,
-            'bg-[#476A8A]': module === 3,
-            'bg-[#476A8A]': section === 5,
-            'bg-[#767676]': section !== 5,
+            'bg-[#B5445B]': module === 3,
+            'bg-[#B5445B]': section === 5,
+            'bg-[#4C4C4C]': section !== 5,
           })}
         ></div>
         <section className="flex flex-1 justify-center">Section 6</section>
@@ -166,9 +166,9 @@ export default function NavBar() {
           className={classNames({
             [styles.arrow]: true,
             [styles.arrowright]: true,
-            'bg-[#395C7E]': module === 3,
-            'bg-[#395C7E]': section === 6,
-            'bg-[#6A6A6A]': section !== 6,
+            'bg-[#A9253F]': module === 3,
+            'bg-[#A9253F]': section === 6,
+            'bg-[#3E3E3E]': section !== 6,
           })}
         ></div>
       </div>
@@ -211,7 +211,14 @@ export default function NavBar() {
         <div className={introClass}>Intro</div>
         <ModuleA />
         <ModuleB />
-        <div className="bg-[#333333] w-1/12 flex justify-center items-center">
+        <div
+          className={classNames(
+            'bg-[#333333] w-1/12 flex justify-center items-center',
+            {
+              'bg-[#001D4A]': module === 4,
+            }
+          )}
+        >
           End
         </div>
       </div>
