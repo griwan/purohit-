@@ -1,62 +1,63 @@
-import "windi.css";
-import "../styles/globals.css";
-import "../styles/table.css";
-import "@vime/core/themes/default.css";
+import 'windi.css';
+import '../styles/globals.css';
+import '../styles/table.css';
+import '@vime/core/themes/default.css';
 
-import { Suspense } from "react";
-import dynamic from "next/dynamic";
-import { MDXProvider } from "@mdx-js/react";
-import Layout from "../components/layout.jsx";
-import Image from "next/image";
+import { Suspense } from 'react';
+import dynamic from 'next/dynamic';
+import { MDXProvider } from '@mdx-js/react';
+import Layout from '../components/layout.jsx';
+import Image from 'next/image';
 
-import Header from "../components/header";
-import MdxFooter from "../components/mdxfooter";
-import List from "../components/list";
-import Quiz from "../components/quiz";
-import Section from "../components/section";
-import Table from "../components/table";
-import BigTable from "../components/bigtable";
-import LetterBig from "../components/letterbig";
-import LetterSmall from "../components/lettersmall";
-import HIV from "../components/hiv";
-import DoubleColumn from "../components/DoubleColumn";
-import FourWay from "../components/fourway";
-import EndScreen from "../components/endscreen";
-import { TextBlock } from "../components/textblocks";
-import Grid from "../components/grid";
-import SecondGrid from "../components/secondgrid";
-import TriplePrep from "../components/tripleprep";
-import TreatmentTools from "../components/treatmenttools";
-import MAS38 from "../components/mas38";
-import ThreeColumnList from "../components/threecolumnlist";
-import ThreeText from "../components/threetext";
-import HivChart from "../components/hivchart";
-import SideListPicture from "../components/SideListPicture";
+import Header from '../components/header';
+import MdxFooter from '../components/mdxfooter';
+import List from '../components/list';
+import Quiz from '../components/quiz';
+import Section from '../components/section';
+import Table from '../components/table';
+import BigTable from '../components/bigtable';
+import LetterBig from '../components/letterbig';
+import LetterSmall from '../components/lettersmall';
+import HIV from '../components/hiv';
+import DoubleColumn from '../components/DoubleColumn';
+import FourWay from '../components/fourway';
+import EndScreen from '../components/endscreen';
+import { TextBlock } from '../components/textblocks';
+import Grid from '../components/grid';
+import SecondGrid from '../components/secondgrid';
+import TriplePrep from '../components/tripleprep';
+import TreatmentTools from '../components/treatmenttools';
+import MAS38 from '../components/mas38';
+import ThreeColumnList from '../components/threecolumnlist';
+import ThreeText from '../components/threetext';
+import HivChart from '../components/hivchart';
+import SideListPicture from '../components/SideListPicture';
+import CulturalHumility from '../components/cultural';
 
-const VPlayer = dynamic(import("../components/player"), {
+const VPlayer = dynamic(import('../components/player'), {
   ssr: false,
   loading: () => <p>Loading player...</p>,
 });
-const SubHeader = dynamic(import("../components/subheader"), {
+const SubHeader = dynamic(import('../components/subheader'), {
   ssr: false,
 });
 
-const SingleLayout = dynamic(() => import("../components/singlelayout"), {
+const SingleLayout = dynamic(() => import('../components/singlelayout'), {
   ssr: false,
 });
-const DoubleLayout = dynamic(() => import("../components/doublelayout"), {
-  ssr: false,
-});
-
-const PotatoLayout = dynamic(() => import("../components/potatolayout"), {
+const DoubleLayout = dynamic(() => import('../components/doublelayout'), {
   ssr: false,
 });
 
-const StickyPicture = dynamic(() => import("../components/stickypicture"), {
+const PotatoLayout = dynamic(() => import('../components/potatolayout'), {
   ssr: false,
 });
 
-const Container = dynamic(() => import("../components/container"), {
+const StickyPicture = dynamic(() => import('../components/stickypicture'), {
+  ssr: false,
+});
+
+const Container = dynamic(() => import('../components/container'), {
   ssr: false,
 });
 
@@ -92,6 +93,7 @@ const components = {
   ThreeText,
   HivChart,
   SideListPicture,
+  CulturalHumility,
 };
 
 function MyApp({ Component, pageProps }) {
