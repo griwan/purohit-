@@ -17,6 +17,11 @@ export default function NavBar() {
     'bg-[#6E95AD]': module === 1,
   });
 
+  let introClassArrowMB = classNames(`${styles.arrow} ${styles.arrowleft}`, {
+    'bg-[#707070]': module !== 1,
+    'bg-[#6E95AD]': module === 1,
+  });
+
   //   intro class end
 
   // module A class start
@@ -114,39 +119,41 @@ export default function NavBar() {
   const ModuleBSection = () => (
     <div className={classNames('flex-1 flex justify-center')}>
       <div
-        className={classNames('flex items-center flex-1 bg-gray-600', {
-          'bg-pink-500': section === 4,
+        className={classNames('flex items-center flex-1 bg-[#557997]', {
+          'bg-[#838383]': section !== 4,
         })}
       >
-        {/* <div className={introClassArrow}></div> */}
+        <div className={introClassArrowMB}></div>
         <section className="flex flex-1 justify-center">Section 4</section>
       </div>
       <div
-        className={classNames('flex items-center flex-1 bg-gray-600', {
-          'bg-pink-600': section === 5,
+        className={classNames('flex items-center flex-1 bg-[#476A8A]', {
+          'bg-[#767676]': section !== 5,
         })}
       >
         <div
           className={classNames({
             [styles.arrow]: true,
             [styles.arrowleft]: true,
-            'bg-pink-500': section === 4,
-            'bg-gray-600': section !== 1,
+            'bg-[#557997]': module === 3,
+            'bg-[#557997]': section === 4,
+            'bg-[#838383]': section !== 4,
           })}
         ></div>
         <section className="flex flex-1 justify-center">Section 5</section>
       </div>
       <div
-        className={classNames('flex items-center flex-1 bg-gray-600', {
-          'bg-pink-600': section === 6,
+        className={classNames('flex items-center flex-1 bg-[#395C7E]', {
+          'bg-[#6A6A6A]': section !== 6,
         })}
       >
         <div
           className={classNames({
             [styles.arrow]: true,
             [styles.arrowleft]: true,
-            'bg-pink-600': section === 5,
-            'bg-gray-600': section !== 2,
+            'bg-[#476A8A]': module === 3,
+            'bg-[#476A8A]': section === 5,
+            'bg-[#767676]': section !== 5,
           })}
         ></div>
         <section className="flex flex-1 justify-center">Section 6</section>
@@ -154,22 +161,51 @@ export default function NavBar() {
           className={classNames({
             [styles.arrow]: true,
             [styles.arrowright]: true,
-            'bg-pink-600': section === 6,
-            'bg-gray-600': section !== 3,
+            'bg-[#395C7E]': module === 3,
+            'bg-[#395C7E]': section === 6,
+            'bg-[#6A6A6A]': section !== 6,
           })}
         ></div>
       </div>
     </div>
   );
 
+  if (module === 2 || (section > 1 && section < 4)) {
+    return (
+      <>
+        <div className="flex text-white h-[4.5rem] text-1.25rem leading-6 font-sans">
+          <div className={introClass}>Intro</div>
+          <ModuleASection />
+          <ModuleB />
+          <div className="bg-[#333333] w-1/12 flex justify-center items-center">
+            End
+          </div>
+        </div>
+      </>
+    );
+  }
+
+  if (module === 3 || section > 3) {
+    return (
+      <>
+        <div className="flex text-white h-[4.5rem] text-1.25rem leading-6 font-sans">
+          <div className={introClass}>Intro</div>
+          <ModuleA />
+          <ModuleBSection />
+          <div className="bg-[#333333] w-1/12 flex justify-center items-center">
+            End
+          </div>
+        </div>
+      </>
+    );
+  }
+
   return (
     <>
       <div className="flex text-white h-[4.5rem] text-1.25rem leading-6 font-sans">
         <div className={introClass}>Intro</div>
-        {/* {(!section || section >= 4) && module !== 2 && <ModuleA />} */}
-        {(module === 2 || section < 4) && <ModuleASection />}
-        {(section < 4 || module === 3) && <ModuleB />}
-        {!module && section >= 4 && <ModuleBSection />}
+        <ModuleA />
+        <ModuleB />
         <div className="bg-[#333333] w-1/12 flex justify-center items-center">
           End
         </div>
