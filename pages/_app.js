@@ -25,7 +25,9 @@ import EndScreen from "../components/endscreen";
 import { TextBlock } from "../components/textblocks";
 import Grid from "../components/grid";
 import SecondGrid from "../components/secondgrid";
-
+import TriplePrep from "../components/tripleprep";
+import TreatmentTools from "../components/treatmenttools";
+import MAS38 from "../components/mas38";
 const VPlayer = dynamic(import("../components/player"), {
   ssr: false,
   loading: () => <p>Loading player...</p>,
@@ -78,6 +80,9 @@ const components = {
   EndScreen,
   Grid,
   SecondGrid,
+  TriplePrep,
+  TreatmentTools,
+  MAS38,
 };
 
 function MyApp({ Component, pageProps }) {

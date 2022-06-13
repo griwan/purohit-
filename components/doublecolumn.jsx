@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import React from 'react';
+import Image from "next/image";
+import React from "react";
 
 const DoubleColumn = () => {
   return (
@@ -20,7 +20,7 @@ const DoubleColumn = () => {
       </div>
       <div className="flex flex-col w-[44rem] gap-4">
         <div>
-          <Image src="/sui.png" alt="next" width={120} height={120} />
+          <Image src="/sui.png" alt="next" width={320} height={120} />
         </div>
         <div className="text-red text-[1.8rem]">
           What’s the deal with retesting?
