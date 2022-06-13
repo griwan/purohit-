@@ -30,6 +30,7 @@ import TreatmentTools from "../components/treatmenttools";
 import MAS38 from "../components/mas38";
 import ThreeColumnList from "../components/threecolumnlist";
 import ThreeText from "../components/threetext";
+import HivChart from "../components/hivchart";
 
 const VPlayer = dynamic(import("../components/player"), {
   ssr: false,
@@ -88,6 +89,7 @@ const components = {
   MAS38,
   ThreeColumnList,
   ThreeText,
+  HivChart,
 };
 
 function MyApp({ Component, pageProps }) {

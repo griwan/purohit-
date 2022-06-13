@@ -2,8 +2,9 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Montserrat", "Libre Baskerville", BlinkMacSystemFont, Segoe UI,
+    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    sans-serif;
 }
 
 a {
@@ -26,4 +27,11 @@ a {
 
 .picture-wrapper {
   height: calc(100% - 16vh);
+}
+
+.line-gap {
+  right: calc(50% + 3.75rem);
+}
+.line-gapr {
+  right: calc(50% - 3.75rem);
 }
