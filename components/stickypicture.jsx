@@ -5,15 +5,15 @@ import React from "react";
 const StickyPicture = (props) => {
   return (
     <div
-      className={classNames("flex", {
+      className={classNames("flex picture-wrapper", {
         "flex-row": !props.direction,
         "flex-row-reverse": props.direction,
       })}
     >
       <div
         className={classNames("basis-4/12 h-full", {
-          "ml-3rem lg:ml-[5rem]": props.direction,
-          "mr-3rem lg:mr-[5rem]": !props.direction,
+          "ml-1rem lg:ml-[3rem]": props.direction,
+          "mr-1rem lg:mr-[3rem]": !props.direction,
         })}
       >
         <div
@@ -29,7 +29,6 @@ const StickyPicture = (props) => {
           height="100%"
           layout="responsive"
           objectFit="cover"
-          className="object-cover h-full"
         />
       </div>
       <div className="basis-7/12 px-2 mt-[3.75rem]">{props.children}</div>

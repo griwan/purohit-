@@ -24,6 +24,6 @@ a {
   cursor: pointer;
 }
 
-/* .wrapper {
-  height: calc(100% - 4rem);
-} */
+.picture-wrapper {
+  height: calc(100% - 16vh);
+}
