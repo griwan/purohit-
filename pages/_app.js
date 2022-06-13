@@ -21,6 +21,7 @@ import LetterBig from '../components/letterbig';
 import LetterSmall from '../components/lettersmall';
 import HIV from '../components/hiv';
 import DoubleColumn from '../components/DoubleColumn';
+import Grid from '../components/grid';
 
 const VPlayer = dynamic(import('../components/player'), {
   ssr: false,
@@ -66,6 +67,7 @@ const components = {
   HIV,
   Container,
   DoubleColumn,
+  Grid,
 };
 
 function MyApp({ Component, pageProps }) {
