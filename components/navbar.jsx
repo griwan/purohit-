@@ -9,31 +9,31 @@ export default function NavBar() {
   // intro class start
   let introClass = classNames(
     'bg-hex-075985 w-1/12 flex justify-center items-center',
-    { 'bg-hex-9ca3af': module !== 1, 'bg-hex-075985': module === 1 }
+    { 'bg-[#999999]': module !== 1, 'bg-[#6E95AD]': module === 1 }
   );
 
   let introClassArrow = classNames(`${styles.arrow} ${styles.arrowleft}`, {
-    'bg-hex-9ca3af': module !== 1,
-    'bg-hex-075985': module === 1,
+    'bg-[#999999]': module !== 1,
+    'bg-[#6E95AD]': module === 1,
   });
 
   //   intro class end
 
   // module A class start
   let moduleClass = classNames(
-    'flex-1 bg-gray-500 flex justify-center items-center'
+    'flex-1 bg-[#707070] flex justify-center items-center'
   );
 
   let moduleBClass = classNames(
-    'flex-1 bg-gray-700 flex justify-center items-center'
+    'flex-1 bg-[#454545] flex justify-center items-center'
   );
 
   let moduleClassArrow = classNames(
-    `${styles.arrow} ${styles.arrowright} bg-gray-500`
+    `${styles.arrow} ${styles.arrowright} bg-[#707070]`
   );
 
   let moduleBClassArrow = classNames(
-    `${styles.arrow} ${styles.arrowright} bg-gray-700`
+    `${styles.arrow} ${styles.arrowright} bg-[#454545]`
   );
   //   module A class end
 
@@ -50,50 +50,51 @@ export default function NavBar() {
   const ModuleASection = () => (
     <div className={classNames('flex-1 flex justify-center')}>
       <div
-        className={classNames('flex items-center flex-1 bg-gray-500', {
-          'bg-sky-600': section === 1,
+        className={classNames('flex items-center flex-1 bg-[#557997]', {
+          'bg-[#838383]': section !== 1,
         })}
       >
         <div className={introClassArrow}></div>
         <section className="flex flex-1 justify-center">Section 1</section>
       </div>
       <div
-        className={classNames('flex items-center flex-1 bg-gray-500', {
-          'bg-sky-600': section === 2,
+        className={classNames('flex items-center flex-1 bg-[#476A8A]', {
+          'bg-[#767676]': section !== 2,
         })}
       >
         <div
           className={classNames({
             [styles.arrow]: true,
             [styles.arrowleft]: true,
-            'bg-sky-600': section === 1,
-            'bg-gray-500': section !== 1,
+            'bg-[#557997]': module === 2,
+            'bg-[#557997]': section === 1,
+            'bg-[#838383]': section !== 1,
           })}
         ></div>
         <section className="flex flex-1 justify-center">Section 2</section>
       </div>
       <div
-        className={classNames('flex items-center flex-1 bg-gray-500', {
-          'bg-sky-600': section === 3,
+        className={classNames('flex items-center flex-1 bg-[#395C7E]', {
+          'bg-[#6A6A6A]': section !== 3,
         })}
       >
         <div
           className={classNames({
             [styles.arrow]: true,
             [styles.arrowleft]: true,
-            'bg-sky-600': section === 2,
-            'bg-gray-500': section !== 2,
+            'bg-[#476A8A]': module === 2,
+            'bg-[#476A8A]': section === 2,
+            'bg-[#767676]': section !== 2,
           })}
         ></div>
-        <section className="flex flex-1 justify-center font-bold">
-          Section 3
-        </section>
+        <section className="flex flex-1 justify-center">Section 3</section>
         <div
           className={classNames({
             [styles.arrow]: true,
             [styles.arrowright]: true,
-            'bg-sky-600': section === 3,
-            'bg-gray-500': section !== 3,
+            'bg-[#395C7E]': module === 2,
+            'bg-[#395C7E]': section === 3,
+            'bg-[#6A6A6A]': section !== 3,
           })}
         ></div>
       </div>
@@ -165,11 +166,11 @@ export default function NavBar() {
     <>
       <div className="flex text-white h-[4.5rem] text-1.25rem leading-6 font-sans">
         <div className={introClass}>Intro</div>
-        {(section >= 4 || module) && <ModuleA />}
-        {!module && section < 4 && <ModuleASection />}
+        {/* {(!section || section >= 4) && module !== 2 && <ModuleA />} */}
+        {(module === 2 || section < 4) && <ModuleASection />}
         {(section < 4 || module === 3) && <ModuleB />}
         {!module && section >= 4 && <ModuleBSection />}
-        <div className="bg-gray-900 w-1/12 flex justify-center items-center">
+        <div className="bg-[#333333] w-1/12 flex justify-center items-center">
           End
         </div>
       </div>
