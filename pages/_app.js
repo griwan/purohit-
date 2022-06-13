@@ -26,6 +26,7 @@ import { TextBlock } from '../components/textblocks';
 import Grid from '../components/grid';
 import SecondGrid from '../components/secondgrid';
 import ThreeColumnList from '../components/threecolumnlist';
+import ThreeText from '../components/threetext';
 
 const VPlayer = dynamic(import('../components/player'), {
   ssr: false,
@@ -80,6 +81,7 @@ const components = {
   Grid,
   SecondGrid,
   ThreeColumnList,
+  ThreeText,
 };
 
 function MyApp({ Component, pageProps }) {
