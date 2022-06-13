@@ -20,7 +20,7 @@ export default function NavButton(props) {
     <>
       {!!prev && (
         <div
-          className="next text-red rounded-full absolute left-50px bottom-40px h-50px w-50px lg:h-79px lg:w-79px z-10"
+          className="next text-red rounded-full absolute left-50px top-68vh h-50px w-50px lg:h-79px lg:w-79px z-10"
           onClick={() => routehandler(prev, 0)}
         >
           <svg
@@ -50,7 +50,7 @@ export default function NavButton(props) {
       {!!next && (
         <div
           className={classNames(
-            "next rounded-full absolute right-50px bottom-40px h-50px w-50px lg:h-79px lg:w-79px z-10",
+            "next rounded-full absolute right-50px top-68vh h-50px w-50px lg:h-79px lg:w-79px z-10",
             {
               "text-red": behavior.forward,
               "text-[#CCCCCC]": !behavior.forward,
