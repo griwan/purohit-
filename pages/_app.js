@@ -28,6 +28,9 @@ import SecondGrid from "../components/secondgrid";
 import TriplePrep from "../components/tripleprep";
 import TreatmentTools from "../components/treatmenttools";
 import MAS38 from "../components/mas38";
+import ThreeColumnList from "../components/threecolumnlist";
+import ThreeText from "../components/threetext";
+
 const VPlayer = dynamic(import("../components/player"), {
   ssr: false,
   loading: () => <p>Loading player...</p>,
@@ -83,6 +86,8 @@ const components = {
   TriplePrep,
   TreatmentTools,
   MAS38,
+  ThreeColumnList,
+  ThreeText,
 };
 
 function MyApp({ Component, pageProps }) {
