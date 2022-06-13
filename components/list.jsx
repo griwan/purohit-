@@ -7,6 +7,7 @@ const List = ({
   fontSize,
   color,
   listArr = [],
+  raw,
 }) => {
   let mdxtopics = [];
   if (list) {
@@ -17,14 +18,24 @@ const List = ({
     <ul className="list-outside list-disc ml-6">
       {topics.map((topic, index) => (
         <li className="text-[#A9253F] mb-4 list-disc text-left" key={index}>
-          <span
-            className={
-              'text-gray-500 ml-2 font-sans ' +
-              (String(fontSize) ? String(fontSize) : 'text-[1.5rem]')
-            }
-          >
-            {topic}
-          </span>
+          {raw ? (
+            <span
+              className={
+                'text-gray-500 ml-2 font-sans ' +
+                (String(fontSize) ? String(fontSize) : 'text-[1.5rem]')
+              }
+              dangerouslySetInnerHTML={{ __html: topic }}
+            />
+          ) : (
+            <span
+              className={
+                'text-gray-500 ml-2 font-sans ' +
+                (String(fontSize) ? String(fontSize) : 'text-[1.5rem]')
+              }
+            >
+              {topic}
+            </span>
+          )}
         </li>
       ))}
     </ul>
