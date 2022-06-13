@@ -1,7 +1,7 @@
 export default function FourWay() {
   return (
     <section className="text-gray-600 body-font">
-      <div className="container px-5 py-24 mx-auto">
+      <div className="container p-5 mx-auto">
         <div className="flex">
           <div className="flex flex-col">
             <div className=" text-red px-8 py-6 font-sans text-center">

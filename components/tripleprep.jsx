@@ -1,7 +1,7 @@
 export default function TriplePrep(props) {
   return (
     <section className="text-gray-600 body-font">
-      <div className="container px-5 py-24 mx-auto">
+      <div className="container p-5 mx-auto">
         <div className="flex -m-4">
           <div className="p-4 lg:w-1/3">
             <div className="h-full font-sans text-2xl bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden relative">
