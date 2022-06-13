@@ -23,20 +23,26 @@ export default function Home() {
         <meta name="description" content="Project H" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="flex justify-around p-10 items-center h-full">
+      <main className="flex justify-around md:p-2 2xl:p-10 items-center h-full">
         <div>
           <Image src="/logo.svg" height={390} width={475} alt="logo" />
         </div>
         <div className="font-serif text-ui-gray h-max px-10">
-          <span className="text-2rem lg:text-4rem">PROVIDING</span>
+          <span className="text-2rem lg:text-3rem 2xl:text-4rem">
+            PROVIDING
+          </span>
           <br />
-          <span className="text-5rem lg:text-7rem text-red">
+          <span className="text-3rem md:text-5rem 2xl:text-7rem text-red">
             HIV TESTING <br />
-            <span className="text-5rem lg:text-7rem text-red">SERVICES</span>
+            <span className="text-3rem md:text-5rem 2xl:text-7rem text-red">
+              SERVICES
+            </span>
           </span>{" "}
           <br />
-          <span className="text-2rem lg:text-4rem">TO YOUR COMMUNITY</span>
-          <p className="font-sans text-1.5rem lg:text-2.5rem pt-9">
+          <span className="text-1.5rem md:text-2rem 2xl:text-4rem">
+            TO YOUR COMMUNITY
+          </span>
+          <p className="font-sans text-xl md:text-1.5rem 2xl:text-2.5rem pt-9">
             {" "}
             A Preparation Guide{" "}
           </p>

@@ -10,15 +10,21 @@ const Footer = (props) => {
       className={[
         enable ? "visible" : "hidden",
         className || "bg-ui-light",
-        "container max-w-screen pin-b px-1 py-1 mx-auto h-max-15vh",
+        "container max-w-screen pin-b px-1 py-1 mx-auto md:h-max-10vh 2xl:h-max-15vh",
       ].join(" ")}
     >
       <div className="flex justify-between items-center px-10">
         {defaults ? (
-          <Image src="/cvs_pharmacy.png" alt="logo" width={255} height={33} />
+          <Image
+            className="basis-10/12"
+            src="/cvs_pharmacy.png"
+            alt="logo"
+            width={255}
+            height={33}
+          />
         ) : (
           <div
-            className="text-left basis-10/12"
+            className="text-left basis-10/12 text-[8px] xl:text-[12px]"
             dangerouslySetInnerHTML={{
               __html: forward ? content : "",
             }}

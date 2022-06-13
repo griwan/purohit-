@@ -52,14 +52,15 @@ export default function Quiz(props) {
   };
 
   const ResponseBanner = () => {
-    if (!answered) return <div className="w-580px h-128px pt-2"></div>;
+    if (!answered)
+      return <div className="h-64px w-580px xl:h-128px pt-2"></div>;
     return (
-      <div className="w-580px h-128px pt-2">
+      <div className="h-64px w-580px xl:h-128px pt-2">
         {correct ? (
           <div className="grid grid-cols-5 gap-2 px-25px py-1rem bg-[#557996] text-white">
             <h1 className="text-xl font-sans font-bold">Correct!</h1>
             <div
-              className="whitespace-normal col-span-4 text-xl"
+              className="whitespace-normal col-span-4 text-base xl:text-xl"
               dangerouslySetInnerHTML={{
                 __html: response,
               }}
@@ -86,16 +87,16 @@ export default function Quiz(props) {
         h="max"
         className="relative bg-white"
       >
-        <div p="20px" border="solid t-2 l-2 ui-text">
-          <h3 font="bold" m="b-10px">
+        <div p="10px xl:20px" border="solid t-2 l-2 ui-text">
+          <h2 font="bold" m="b-5px xl:b-10px">
             {title}
-          </h3>
+          </h2>
           <div className="options">
             {optionsArray.map((option, index) => {
               return (
                 <div
                   key={index}
-                  className="flex items-center py-2 h-62px"
+                  className="flex items-center py-2 h-52px xl:h-62px"
                   onClick={() => checkAnswer(option, index)}
                 >
                   <input type="radio" name="option" value={option} />
@@ -106,7 +107,7 @@ export default function Quiz(props) {
                     width={46}
                     alt="radio"
                   />
-                  <label p="l-1rem" font="2xl">
+                  <label p="l-1rem" className="text-base xl:text-2xl">
                     {option}
                   </label>
                 </div>
