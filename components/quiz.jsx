@@ -78,7 +78,7 @@ export default function Quiz(props) {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center h-full">
+    <div className="flex flex-col justify-center items-center picture-wrapper">
       <div
         text="ui-text xl"
         font="sans"

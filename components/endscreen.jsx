@@ -2,7 +2,7 @@ import Image from "next/image";
 export default function EndScreen() {
   return (
     <section className="text-gray-600 body-font">
-      <div className="container px-5 py-24 mx-auto">
+      <div className="container p-5 mx-auto">
         <div className="flex flex-wrap -m-4">
           <div className="p-4 lg:w-1/4 md:w-1/2">
             <div className="h-full flex flex-col items-center text-center">
