@@ -1,6 +1,6 @@
 export default function MAS38() {
   return (
-    <div className="flex items-center justify-center gap-8 font-sans text-2xl text-center mx-auto w-[66%] text-ui-text">
+    <div className="flex items-center justify-center gap-2 2xl:gap-8 font-sans text-xs 2xl:text-2xl text-center mx-auto w-[66%] text-ui-text">
       <div className="flex flex-col basis-1/2 items-center place-content-between gap-6 justify-around">
         <svg
           xmlns="http://www.w3.org/2000/svg"

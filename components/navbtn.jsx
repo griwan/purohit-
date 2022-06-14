@@ -75,7 +75,13 @@ export default function NavButton(props) {
                 cy="39.5"
                 r="39.5"
                 transform="translate(4507 712)"
-                fill={next != "END" ? "#A9253F" : "#fff"}
+                fill={
+                  !behavior.forward
+                    ? "#CCCCCC"
+                    : next === "END"
+                    ? "#fff"
+                    : "#A9253F"
+                }
               />
               <path
                 id="Polygon_3"

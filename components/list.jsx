@@ -18,14 +18,14 @@ const List = ({
     <ul className="list-outside list-disc ml-6">
       {topics.map((topic, index) => (
         <li
-          className="text-[#A9253F] mb-1 xl:mb-4 list-disc text-left"
+          className="text-[#A9253F] mb-1 2xl:mb-4 list-disc text-left"
           key={index}
         >
           {raw ? (
             <span
               className={
                 "text-gray-500 ml-2 font-sans " +
-                (String(fontSize) ? String(fontSize) : "text-base 2xl:text-2xl")
+                (fontSize ? String(fontSize) : "text-base 2xl:text-2xl")
               }
               dangerouslySetInnerHTML={{ __html: topic }}
             />

@@ -12,8 +12,8 @@ const StickyPicture = (props) => {
     >
       <div
         className={classNames("basis-4/12 h-full", {
-          "ml-1rem lg:ml-[3rem]": props.direction,
-          "mr-1rem lg:mr-[3rem]": !props.direction,
+          "ml-1rem 2xl:ml-[3rem]": props.direction,
+          "mr-1rem 2xl:mr-[3rem]": !props.direction,
         })}
       >
         <div
@@ -31,7 +31,9 @@ const StickyPicture = (props) => {
           />
         </div>
       </div>
-      <div className="basis-7/12 px-2 mt-[3.75rem]">{props.children}</div>
+      <div className="basis-8/12 2xl:basis-7/12 px-2 mt-[2rem] 2xl:mt-[3.75rem]">
+        {props.children}
+      </div>
     </div>
   );
 };
