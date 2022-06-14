@@ -1,6 +1,6 @@
 export default function HivChart(props) {
   return (
-    <div className="flex flex-col gap-[2rem] text-2xl text-ui-text justify-center items-center relative w-max h-max">
+    <div className="flex flex-col gap-8 2xl:gap-[2rem] text-base 2xl:text-2xl text-ui-text justify-center items-center relative w-max h-max">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="1.5"

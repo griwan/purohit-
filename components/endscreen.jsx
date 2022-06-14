@@ -2,19 +2,19 @@ import Image from "next/image";
 export default function EndScreen() {
   return (
     <section className="text-gray-600 body-font">
-      <div className="container p-5 mx-auto">
-        <div className="flex flex-wrap -m-4">
-          <div className="p-4 lg:w-1/4 md:w-1/2">
+      <div className="p-5 mx-auto">
+        <div className="flex mx-auto -m-4">
+          <div className="p-4 2xl:w-1/4  ">
             <div className="h-full flex flex-col items-center text-center">
               <a
                 href="https://www.healthysexuals.com/"
-                className="font-sans underline py-2 font-semibold text-3xl text-red"
+                className="font-sans underline py-2 font-semibold text-base 2xl:text-3xl text-red"
               >
                 HealthySexual<sup>&#174;</sup>{" "}
               </a>
               <img
                 alt="team"
-                className="flex-shrink-0 w-full h-56 object-cover object-center mb-4"
+                className="flex-shrink-0 w-full 2xl:w-full h-30 2xl:h-56 object-cover object-center mb-4"
                 src="/Image_36.png"
               />
               <div className="w-full flex justify-left text-left gap-1">
@@ -24,7 +24,7 @@ export default function EndScreen() {
                   width={60}
                   alt="qr"
                 />
-                <p>
+                <p className="text-xs 2xl:text-base">
                   Scan the QR code or visit <br />
                   <a
                     className="text-red underline"
@@ -36,17 +36,17 @@ export default function EndScreen() {
               </div>
             </div>
           </div>
-          <div className="p-4 lg:w-1/4 md:w-1/2">
+          <div className="p-4 2xl:w-1/4  ">
             <div className="h-full flex flex-col items-center text-center">
               <a
                 href="https://helpstopthevirus.com/"
-                className="font-sans underline py-2 font-semibold text-3xl text-red"
+                className="font-sans underline py-2 font-semibold text-lg 2xl:text-3xl text-red"
               >
                 Help Stop The Virus
               </a>
               <img
                 alt="team"
-                className="flex-shrink-0 w-full h-56 object-cover object-center mb-4"
+                className="flex-shrink-0 w-full h-30 2xl:h-56 object-cover object-center mb-4"
                 src="/Group_369.png"
               />
               <div className="w-full flex justify-left text-left gap-1">
@@ -56,7 +56,7 @@ export default function EndScreen() {
                   width={60}
                   alt="qr"
                 />
-                <p>
+                <p className="text-xs 2xl:text-base">
                   Scan the QR code or visit <br />
                   <a
                     className="text-red underline"
@@ -68,17 +68,17 @@ export default function EndScreen() {
               </div>
             </div>
           </div>
-          <div className="p-4 lg:w-1/4 md:w-1/2">
+          <div className="p-4 2xl:w-1/4  ">
             <div className="h-full flex flex-col items-center text-center">
               <a
                 href="https://www.hivtestnow.com/"
-                className="font-sans underline py-2 font-semibold text-3xl text-red"
+                className="font-sans underline py-2 font-semibold text-lg 2xl:text-3xl text-red"
               >
                 Press Play
               </a>
               <img
                 alt="team"
-                className="flex-shrink-0 w-full h-56 object-cover object-center mb-4"
+                className="flex-shrink-0 w-full h-30 2xl:h-56 object-cover object-center mb-4"
                 src="/Screen.png"
               />
               <div className="w-full flex justify-left text-left gap-1">
@@ -88,7 +88,7 @@ export default function EndScreen() {
                   width={60}
                   alt="qr"
                 />
-                <p>
+                <p className="text-xs 2xl:text-base">
                   Scan the QR code or visit <br />
                   <a
                     className="text-red underline"
@@ -100,18 +100,18 @@ export default function EndScreen() {
               </div>
             </div>
           </div>
-          <div className="p-4 lg:w-1/4 md:w-1/2">
+          <div className="p-4 2xl:w-1/4  ">
             <div className="h-full flex flex-col items-center text-center">
               <a
                 href="www.google.com"
-                className="font-sans underline py-2 font-semibold text-3xl text-red"
+                className="font-sans underline py-2 font-semibold text-lg 2xl:text-3xl text-red"
               >
                 Gilead HIV
               </a>
 
               <img
                 alt="team"
-                className="flex-shrink-0 w-full h-56 object-cover object-center mb-4"
+                className="flex-shrink-0 w-full h-30 2xl:h-56 object-cover object-center mb-4"
                 src="/Image_38.png"
               />
               <div className="w-full flex justify-left text-left gap-1">
@@ -121,7 +121,7 @@ export default function EndScreen() {
                   width={60}
                   alt="qr"
                 />
-                <p>
+                <p className="text-xs 2xl:text-base">
                   Scan the QR code or visit <br />
                   <a
                     className="text-red underline"
