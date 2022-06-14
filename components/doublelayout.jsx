@@ -10,13 +10,13 @@ const DoubleLayout = (props) => {
       })}
     >
       <div
-        className={classNames("flex gap-4 justify-center", {
+        className={classNames("flex gap-4 justify-center w-[80%]", {
           "items-center": !props.up,
           "items-start": props.up,
         })}
       >
-        <div className="w-full">{props.children[0]}</div>
-        <div className="w-full">{props.children[1]}</div>
+        <div className="xl:w-full w-[50%]">{props.children[0]}</div>
+        <div className="xl:w-full w-[50%]">{props.children[1]}</div>
       </div>
     </div>
   );

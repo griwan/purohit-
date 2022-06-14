@@ -17,7 +17,7 @@ const Slides = ({ mdxSource, frontMatter }) => {
     setFooter({ enable: footer, className: "", content: footerContent });
   }, [module, next, prev, section, setNav, setFooter, footer, footerContent]);
   return (
-    <div className="wrapper h-full">
+    <div className="wrapper">
       <Head>
         <title>{title}</title>
         <meta name="description" content={title} />

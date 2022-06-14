@@ -1,4 +1,5 @@
 import Image from "next/image";
+import classNames from "classnames";
 import { footerAtom, navBehavior } from "../store.js";
 import { useAtomValue } from "jotai";
 
@@ -10,10 +11,12 @@ const Footer = (props) => {
       className={[
         enable ? "visible" : "hidden",
         className || "bg-ui-light",
-        "container max-w-screen pin-b px-1 py-1 mx-auto md:h-max-10vh 2xl:h-max-15vh",
+        "container max-w-screen pin-b px-1 py-1 min-h-15vh max-h-15vh",
       ].join(" ")}
     >
-      <div className="flex justify-between items-center px-10">
+      <div
+        className={classNames("flex justify-between items-center px-10 h-full")}
+      >
         {defaults ? (
           <Image
             className="basis-10/12"
@@ -24,7 +27,7 @@ const Footer = (props) => {
           />
         ) : (
           <div
-            className="text-left basis-10/12 text-[8px] xl:text-[12px]"
+            className="text-left basis-10/12 text-[7px] xl:text-[12px]"
             dangerouslySetInnerHTML={{
               __html: forward ? content : "",
             }}

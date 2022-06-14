@@ -29,9 +29,17 @@ a {
   height: calc(100% - 16vh);
 }
 
+.slide-wrapper {
+  height: calc(100% - 16vh);
+}
+
 .line-gap {
   right: calc(50% + 3.75rem);
 }
 .line-gapr {
   right: calc(50% - 3.75rem);
+}
+
+.wrapper {
+  height: 79vh;
 }

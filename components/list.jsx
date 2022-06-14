@@ -25,9 +25,7 @@ const List = ({
             <span
               className={
                 "text-gray-500 ml-2 font-sans " +
-                (String(fontSize)
-                  ? String(fontSize)
-                  : "text-base 2xl:text-[1.5rem]")
+                (String(fontSize) ? String(fontSize) : "text-base 2xl:text-2xl")
               }
               dangerouslySetInnerHTML={{ __html: topic }}
             />

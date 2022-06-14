@@ -1,8 +1,8 @@
-import Image from 'next/image';
-import React from 'react';
+import Image from "next/image";
+import React from "react";
 
 const Row = ({ title, c1, c2, reference, body }) => (
-  <div className="row">
+  <div className="row text-ui-text">
     <div>
       {title}
       <sup>{reference}</sup>
@@ -24,60 +24,60 @@ class Table extends React.Component {
       data: [
         {
           id: 1,
-          title: 'Chlamydia',
+          title: "Chlamydia",
           c1: false,
           c2: true,
-          reference: '1',
+          reference: "1",
         },
         {
           id: 2,
-          title: 'Gonorrhea',
+          title: "Gonorrhea",
           c1: false,
           c2: true,
-          reference: '2',
+          reference: "2",
         },
         {
           id: 3,
-          title: 'Hepatitis A, B, and C',
+          title: "Hepatitis A, B, and C",
           c1: false,
           c2: true,
-          reference: '3',
+          reference: "3",
         },
         {
           id: 4,
-          title: 'Herpes',
+          title: "Herpes",
           c1: true,
           c2: false,
-          reference: '4',
+          reference: "4",
         },
         {
           id: 5,
-          title: 'HIV',
+          title: "HIV",
           c1: false,
           c2: true,
-          reference: '5',
+          reference: "5",
         },
         {
           id: 6,
-          title: 'HPV',
+          title: "HPV",
           c1: true,
           c2: false,
-          reference: '4, 6',
-          body: '(Genital warts, cervical cancer and anal cancer)',
+          reference: "4, 6",
+          body: "(Genital warts, cervical cancer and anal cancer)",
         },
         {
           id: 7,
-          title: 'Syphilis',
+          title: "Syphilis",
           c1: true,
           c2: false,
-          reference: '7',
+          reference: "7",
         },
         {
           id: 8,
-          title: 'Trichomoniasis',
+          title: "Trichomoniasis",
           c1: false,
           c2: true,
-          reference: '5,8',
+          reference: "5,8",
         },
       ],
     };
@@ -91,7 +91,7 @@ class Table extends React.Component {
     ));
 
     return (
-      <div className="table">
+      <div className="table text-base xl:text-lg">
         <div className="header">
           <div>STIs</div>
           <div>Skin-to-Skin Contact</div>

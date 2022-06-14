@@ -23,7 +23,7 @@ export default function Home() {
         <meta name="description" content="Project H" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="flex justify-around md:p-2 2xl:p-10 items-center h-full">
+      <main className="flex justify-around md:p-2 2xl:p-10 items-center wrapper">
         <div>
           <Image src="/logo.svg" height={390} width={475} alt="logo" />
         </div>
