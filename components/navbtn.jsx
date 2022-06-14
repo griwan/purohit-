@@ -3,11 +3,13 @@ import Image from "next/image";
 import classNames from "classnames";
 import { navAtom, navBehavior } from "../store.js";
 import { useAtomValue, useAtom } from "jotai";
+import { useState, useEffect } from "react";
 
 export default function NavButton(props) {
   const { prev, next } = useAtomValue(navAtom);
   const [behavior, setBehavior] = useAtom(navBehavior);
   const router = useRouter();
+  const [alt, setAlt] = useState(false);
 
   const routehandler = (route, i) => {
     if (!behavior.forward && i) return;
@@ -20,7 +22,9 @@ export default function NavButton(props) {
     <>
       {!!prev && (
         <div
-          className="next text-red rounded-full absolute left-50px top-66vh h-50px w-50px lg:h-79px lg:w-79px z-10"
+          className={classNames(
+            "next rounded-full absolute left-50px top-66vh h-50px w-50px lg:h-79px lg:w-79px z-10"
+          )}
           onClick={() => routehandler(prev, 0)}
         >
           <svg
@@ -35,14 +39,14 @@ export default function NavButton(props) {
               cx="39.5"
               cy="39.5"
               r="39.5"
-              fill="currentColor"
+              fill={next != "END" ? "#A9253F" : "#fff"}
             />
             <path
               id="Polygon_3"
               data-name="Polygon 3"
               d="M20,0,40,34H0Z"
               transform="translate(19 60) rotate(-90)"
-              fill="#fff"
+              fill={next === "END" ? "#A9253F" : "#fff"}
             />
           </svg>
         </div>
@@ -71,14 +75,14 @@ export default function NavButton(props) {
                 cy="39.5"
                 r="39.5"
                 transform="translate(4507 712)"
-                fill="currentColor"
+                fill={next != "END" ? "#A9253F" : "#fff"}
               />
               <path
                 id="Polygon_3"
                 data-name="Polygon 3"
                 d="M20,0,40,34H0Z"
                 transform="translate(4567 732) rotate(90)"
-                fill="#fff"
+                fill={next === "END" ? "#A9253F" : "#fff"}
               />
             </g>
           </svg>
