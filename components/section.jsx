@@ -45,10 +45,10 @@ const Section = ({ section, color }) => {
       <div
         className={`flex flex-col flex-1 justify-center items-center w-full ${color}`}
       >
-        <div className="flex-1 text-white text-4xl xl:text-[3.875rem] flex items-center font-sans">
+        <div className="flex-1 text-white text-4xl 2xl:text-[3.875rem] flex items-center font-sans">
           {title}
         </div>
-        <div className="flex-1 text-white text-5xl xl:text-[4.563rem] font-medium font-serif text-center max-w-[80%]">
+        <div className="flex-1 text-white text-5xl 2xl:text-[4.563rem] font-medium font-serif text-center max-w-[80%]">
           {heading}
         </div>
       </div>
