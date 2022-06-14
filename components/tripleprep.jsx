@@ -3,9 +3,9 @@ export default function TriplePrep(props) {
     <section className="text-gray-600 body-font">
       <div className="container p-5 mx-auto">
         <div className="flex -m-4">
-          <div className="p-4 lg:w-1/3">
-            <div className="h-full font-sans text-2xl bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden relative">
-              <h1 className="title-font text-2xl lg:text-3xl font-medium text-ui-text mb-3">
+          <div className="p-4 2xl:w-1/3">
+            <div className="h-max font-sans text-base bg-gray-100 bg-opacity-75 px-4 2xl:px-8 pt-8 2xl:pt-16 pb-12 2xl:pb-24 rounded-lg overflow-hidden relative">
+              <h1 className="title-font text-2xl 2xl:text-3xl font-medium text-ui-text mb-3">
                 What are Protective Practices? <sup>1</sup>
               </h1>
               <p className="leading-relaxed mb-3 text-sans">
@@ -17,8 +17,8 @@ export default function TriplePrep(props) {
               </p>
             </div>
           </div>
-          <div className="p-4 lg:w-1/3">
-            <div className="h-full font-sans text-2xl px-8 pt-16 pb-24 rounded-lg overflow-hidden relative">
+          <div className="p-4 2xl:w-1/3">
+            <div className="font-sans text-base 2xl:text-2xl px-4 2xl:px-8 pt-8 2xl:pt-16 pb-12 2xl:pb-24 rounded-lg overflow-hidden relative">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="63"
@@ -33,7 +33,7 @@ export default function TriplePrep(props) {
                   fill="#395c7e"
                 />
               </svg>
-              <h1 className="title-font text-2xl lg:text-3xl text-xl font-medium text-[#395C7E] mb-3 pt-5">
+              <h1 className="title-font text-2xl 2xl:text-3xl text-xl font-medium text-[#395C7E] mb-3 pt-5">
                 What is PrEP? <sup>2,3</sup>
               </h1>
               <p className="leading-relaxed mb-3 text-sans">
@@ -48,8 +48,8 @@ export default function TriplePrep(props) {
               </p>
             </div>
           </div>
-          <div className="p-4 lg:w-1/3">
-            <div className="h-full font-sans text-2xl px-8 pt-16 pb-24 rounded-lg overflow-hidden relative">
+          <div className="p-4 2xl:w-1/3">
+            <div className="font-sans text-base 2xl:text-2xl px-4 2xl:px-8 pt-8 2xl:pt-16 pb-12 2xl:pb-24 rounded-lg overflow-hidden relative">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="63"
@@ -80,7 +80,7 @@ export default function TriplePrep(props) {
                 </g>
               </svg>
 
-              <h1 className="title-font text-2xl lg:text-3xl text-xl font-medium text-red mb-3 pt-5">
+              <h1 className="title-font text-2xl 2xl:text-3xl text-xl font-medium text-red mb-3 pt-5">
                 What is PEP? <sup>4</sup>
               </h1>
               <p className="leading-relaxed mb-3 text-sans">
@@ -96,7 +96,7 @@ export default function TriplePrep(props) {
             </div>
           </div>
         </div>
-        <p className="text-red font-sans font-medium text-2xl text-center w-10/12 lg:w-6/12 mx-auto">
+        <p className="text-red font-sans font-medium text-base 2xl:text-2xl text-center w-10/12 2xl:w-6/12 mx-auto">
           The recent availability of PrEP medicine helps provide an incentive
           for people to get tested to protect themselves and their partners
           against HIV5

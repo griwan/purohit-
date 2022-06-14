@@ -53,14 +53,14 @@ export default function Quiz(props) {
 
   const ResponseBanner = () => {
     if (!answered)
-      return <div className="h-64px w-580px xl:h-128px pt-2"></div>;
+      return <div className="h-64px w-580px 2xl:h-128px pt-2"></div>;
     return (
-      <div className="h-64px w-580px xl:h-128px pt-2">
+      <div className="h-64px w-580px 2xl:h-128px pt-2">
         {correct ? (
           <div className="grid grid-cols-5 gap-2 px-25px py-1rem bg-[#557996] text-white">
             <h1 className="text-xl font-sans font-bold">Correct!</h1>
             <div
-              className="whitespace-normal col-span-4 text-base xl:text-xl"
+              className="whitespace-normal col-span-4 text-sm 2xl:text-xl"
               dangerouslySetInnerHTML={{
                 __html: response,
               }}
@@ -87,8 +87,8 @@ export default function Quiz(props) {
         h="max"
         className="relative bg-white"
       >
-        <div p="10px xl:20px" border="solid t-2 l-2 ui-text">
-          <h2 font="bold" m="b-5px xl:b-10px">
+        <div p="10px 2xl:20px" border="solid t-2 l-2 ui-text">
+          <h2 font="bold" m="b-5px 2xl:b-10px">
             {title}
           </h2>
           <div className="options">
@@ -96,7 +96,7 @@ export default function Quiz(props) {
               return (
                 <div
                   key={index}
-                  className="flex items-center py-2 h-52px xl:h-62px"
+                  className="flex items-center py-2 h-52px 2xl:h-62px"
                   onClick={() => checkAnswer(option, index)}
                 >
                   <input type="radio" name="option" value={option} />
@@ -107,14 +107,14 @@ export default function Quiz(props) {
                     width={46}
                     alt="radio"
                   />
-                  <label p="l-1rem" className="text-base xl:text-2xl">
+                  <label p="l-1rem" className="text-base 2xl:text-2xl">
                     {option}
                   </label>
                 </div>
               );
             })}
           </div>
-          <div className="absolute w-[150px] h-[150px] -top-[65px] -left-[75px] xl:w-[203px] xl:h-[207px] xl:-top-100px xl:-left-94px -z-1">
+          <div className="absolute w-[150px] h-[150px] -top-[65px] -left-[75px] 2xl:w-[203px] 2xl:h-[207px] 2xl:-top-100px 2xl:-left-94px -z-1">
             <Image
               src="/quiz.svg"
               alt="quiz"

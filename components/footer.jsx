@@ -27,7 +27,7 @@ const Footer = (props) => {
           />
         ) : (
           <div
-            className="text-left basis-10/12 text-[7px] xl:text-[12px]"
+            className="text-left basis-10/12 text-[7px] 2xl:text-[12px]"
             dangerouslySetInnerHTML={{
               __html: forward ? content : "",
             }}

@@ -91,7 +91,7 @@ class Table extends React.Component {
     ));
 
     return (
-      <div className="table text-base xl:text-lg">
+      <div className="table text-base 2xl:text-lg">
         <div className="header">
           <div>STIs</div>
           <div>Skin-to-Skin Contact</div>

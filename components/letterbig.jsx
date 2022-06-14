@@ -6,7 +6,7 @@ const LetterBig = (props) => {
   return (
     <div
       className={classNames(
-        "font-serif text-5rem xl:text-8.3rem mt-1rem xl:mt-2rem",
+        "font-serif text-5rem 2xl:text-8.3rem mt-1rem 2xl:mt-2rem",
         {
           "text-red": props.red,
           "text-ui-cyan": props.cyan,
