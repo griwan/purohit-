@@ -95,7 +95,7 @@ export default function HIVReturns(props) {
             <span className="text-ui-blue">
               In 2018, 1.2 million individuals
             </span>{' '}
-            were eligible for PrEP medicines3
+            were eligible for PrEP medicines<sup>3</sup>
           </div>
           <div className="bg-white p-1">
             Test results/diagnosis<sup>1,2</sup>
@@ -104,7 +104,7 @@ export default function HIVReturns(props) {
             <span className="text-red">
               In 2018, 86% of people living with HIV
             </span>{' '}
-            have been diagnosed3
+            have been diagnosed<sup>3</sup>
           </div>
         </div>
       </div>
@@ -120,21 +120,21 @@ export default function HIVReturns(props) {
             <span className="text-red">
               In 2018, 86% of people living with HIV
             </span>{' '}
-            have been diagnosed3
+            have been diagnosed<sup>3</sup>
           </div>
         </div>
       </div>
       <div className="flex justify-between items-center">
         <div className="bg-white p-1 mr-48 w-[25rem] text-right">
           <span className="text-ui-blue">…Only 18%</span> of those individuals
-          are on PrEP medicines3
+          are on PrEP medicines<sup>3</sup>
         </div>
         <div className="bg-white p-1">
           Engaged in clinical care<sup>2</sup>
         </div>
         <div className="bg-white p-1 ml-48 w-[25rem] text-left">
           …<span className="text-red">Only 56%</span> of those individuals have
-          achieved viral suppression3
+          achieved viral suppression<sup>3</sup>
         </div>
       </div>
       <div className="inline-flex items-center gap-[5rem]">
