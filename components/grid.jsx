@@ -62,10 +62,12 @@ const Grid = () => {
           </div>
         </div>
       </div>
-      <Banner>
-        MAKE A COMMITMENT TODAY TO ENGAGE IN PEOPLE-FIRST PRACTICES AS YOU
-        SCREEN PEOPLE FOR HIV
-      </Banner>
+      <div className="h-[12rem] w-full font-serif bg-red text-[2.3rem] text-center text-white flex justify-center items-center absolute top-61vh left-0 right-0">
+        <div className="w-[86rem]">
+          MAKE A COMMITMENT TODAY TO ENGAGE IN PEOPLE-FIRST PRACTICES AS YOU
+          SCREEN PEOPLE FOR HIV
+        </div>
+      </div>
     </div>
   );
 };
