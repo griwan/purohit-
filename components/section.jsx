@@ -41,26 +41,19 @@ const Section = ({ section, color }) => {
   let image = contents[section].image;
 
   return (
-    <div className="flex flex-col items-center h-full">
+    <div className="flex flex-col items-center h-[94vh]">
       <div
         className={`flex flex-col flex-1 justify-center items-center w-full ${color}`}
       >
         <div className="flex-1 text-white text-4xl xl:text-[3.875rem] flex items-center font-sans">
           {title}
         </div>
-        <div className="flex-1 text-white text-5xl xl:text-[4.563rem] font-medium font-serif text-center max-w-[73rem]">
+        <div className="flex-1 text-white text-5xl xl:text-[4.563rem] font-medium font-serif text-center max-w-[80%]">
           {heading}
         </div>
       </div>
       <div className="flex-1 h-full w-full relative">
-        <Image
-          src={image}
-          alt="section"
-          width="100%"
-          height="100%"
-          layout="fill"
-          objectFit="cover"
-        />
+        <Image src={image} alt="section" layout="fill" objectFit="cover" />
       </div>
     </div>
   );

@@ -43,3 +43,7 @@ a {
 .wrapper {
   height: 79vh;
 }
+
+.sticky-image {
+  height: calc(100% - 2rem);
+}

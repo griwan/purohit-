@@ -22,14 +22,14 @@ const StickyPicture = (props) => {
             "bg-[#476A8A]": props.primary,
           })}
         ></div>
-        <Image
-          src={props.image}
-          alt="section"
-          width="100%"
-          height="100%"
-          layout="responsive"
-          objectFit="cover"
-        />
+        <div className="sticky-image w-full relative">
+          <Image
+            src={props.image}
+            alt="section"
+            layout="fill"
+            objectFit="cover"
+          />
+        </div>
       </div>
       <div className="basis-7/12 px-2 mt-[3.75rem]">{props.children}</div>
     </div>

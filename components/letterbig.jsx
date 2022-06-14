@@ -6,14 +6,14 @@ const LetterBig = (props) => {
   return (
     <div
       className={classNames(
-        "font-serif text-5rem xl:text-8.3rem mt-1rem xl:mt-4rem",
+        "font-serif text-5rem xl:text-8.3rem mt-1rem xl:mt-2rem",
         {
           "text-red": props.red,
           "text-ui-cyan": props.cyan,
         }
       )}
     >
-      <div className="flex justify-center ml-4rem">
+      <div className="flex justify-center ml-2rem">
         {letters.map((letter, index) => (
           <span className="mr-4rem" key={index}>
             {letter}

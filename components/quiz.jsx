@@ -114,13 +114,12 @@ export default function Quiz(props) {
               );
             })}
           </div>
-          <div className="absolute -top-100px -left-94px -z-1">
+          <div className="absolute w-[150px] h-[150px] -top-[65px] -left-[75px] xl:w-[203px] xl:h-[207px] xl:-top-100px xl:-left-94px -z-1">
             <Image
               src="/quiz.svg"
               alt="quiz"
-              width={203}
-              height={207}
-              className="absolute top-1rem left-1rem"
+              layout="fill"
+              objectFit="contain"
             />
           </div>
         </div>

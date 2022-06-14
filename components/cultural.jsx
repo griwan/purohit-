@@ -1,5 +1,5 @@
-import React from 'react';
-import SubHeader from './subheader';
+import React from "react";
+import SubHeader from "./subheader";
 
 const Container = (props) => {
   return (
@@ -49,7 +49,7 @@ const CulturalHumility = () => {
             <div className="relative text-center">
               <img src="/s5-1-3.svg" className="m-auto mb-6" />
             </div>
-            <div className="text-left text-red mt-6 font-sans text-1.5rem leading-0 pr-[2.18rem] font-medium">
+            <div className="text-left text-red mt-6 font-sans text-1.5rem leading-0 pr-[2.18rem] font-medium -m-10px">
               Organizational behaviors
             </div>
           </div>

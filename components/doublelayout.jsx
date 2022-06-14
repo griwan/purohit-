@@ -1,9 +1,10 @@
 import React from "react";
+import Image from "next/image";
 import classNames from "classnames";
 const DoubleLayout = (props) => {
   return (
     <div
-      className={classNames("flex pt-8 ", {
+      className={classNames("flex pt-8 relative", {
         "justify-center": props.center,
         "justify-start": props.left,
         "justify-end": props.right,
@@ -17,6 +18,19 @@ const DoubleLayout = (props) => {
       >
         <div className="xl:w-full w-[50%]">{props.children[0]}</div>
         <div className="xl:w-full w-[50%]">{props.children[1]}</div>
+        <div
+          className={classNames("absolute h-full w-full -z-2", {
+            visible: props.bg,
+            hidden: !props.bg,
+          })}
+        >
+          <Image
+            alt="Mountains"
+            src="/Group_469.svg"
+            layout="fill"
+            objectFit="contain"
+          />
+        </div>
       </div>
     </div>
   );
