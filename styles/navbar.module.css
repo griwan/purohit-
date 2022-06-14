@@ -20,16 +20,15 @@
 
 @media only screen and (max-width: 1024px) {
   .arrowleft {
-    left: -8px;
+    left: -14px;
   }
 
   .arrowright {
-    right: -15px;
+    right: -18px;
   }
 
   .arrow {
-    /* margin-left: 10px; */
-    width: 32px;
-    height: 32px;
+    width: 44px;
+    height: 44px;
   }
 }
