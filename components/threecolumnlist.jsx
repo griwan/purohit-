@@ -71,6 +71,9 @@ const ThreeColumnList = () => {
 
           <div className="flex justify-between">
             <div className="text-red text-[1.5rem]">HIV Infection</div>
+            <div>
+              <img src="/rightarrow.svg" alt="arrow" />
+            </div>
             <div className="text-ui-blue text-[1.5rem] text-right">
               HIV transmission; diagnosed with HIV
             </div>
