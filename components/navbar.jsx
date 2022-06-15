@@ -199,7 +199,7 @@ export default function NavBar() {
           <ModuleASection />
           <ModuleB />
           <div className="sm:text-xs lg:text-lg bg-[#333333] w-1/12 flex justify-center items-center">
-            <span className="z-10">End</span>
+            <span className="z-10 -mr-5">End</span>
           </div>
         </div>
       </>
@@ -215,7 +215,7 @@ export default function NavBar() {
           <ModuleBSection />
           {/* hehe */}
           <div className="text-xs lg:text-lg bg-[#333333] w-1/12 flex justify-center items-center">
-            <span className="z-10">End</span>
+            <span className="z-10 -mr-5">End</span>
           </div>
         </div>
       </>
@@ -236,7 +236,7 @@ export default function NavBar() {
             }
           )}
         >
-          <span className="z-10">End</span>
+          <span className="z-10 -mr-5">End</span>
         </div>
       </div>
     </>
