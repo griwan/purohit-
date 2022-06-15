@@ -26,3 +26,9 @@ export function Pic(props) {
     </div>
   );
 }
+
+export function Kxa() {
+  return (
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Thik xa hajur!</a>
+  );
+}
