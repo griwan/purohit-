@@ -15,7 +15,7 @@ const SecondGrid = () => {
   return (
     <Container>
       <div className="mt-[1rem]">
-        <div className="grid grid-cols-2 gap-y-2 gap-x-4 text-[1.8rem] text-[#707070] font-sans leading-9 mt-[3.5rem]">
+        <div className="grid grid-cols-2 gap-y-2 gap-x-4 text-base 2xl:text-[1.8rem] text-[#707070] font-sans 2xl:leading-9 mt-2 2xl:mt-[3.5rem]">
           <div className="flex gap-x-6">
             <div>
               <Image src="/baby.svg" alt="globe" width={100} height={100} />
@@ -27,7 +27,7 @@ const SecondGrid = () => {
               <div>
                 <List
                   type="simple"
-                  fontSize="2xl:text-xl"
+                  fontSize="text-sm 2xl:text-xl"
                   listArr={[
                     "“Sex” and “gender” are often used interchangeably",
                     "The terms are not equivalent",
@@ -49,7 +49,7 @@ const SecondGrid = () => {
               <div>
                 <List
                   type="simple"
-                  fontSize="2xl:text-xl"
+                  fontSize="text-sm 2xl:text-xl"
                   listArr={[
                     "A person’s physical, romantic, and/or emotional attraction to other people of the same gender/different genders",
                     "Some examples of sexual orientation may be asexual, bisexual, gay, lesbian, queer, and/or straight (heterosexual)",
@@ -71,7 +71,7 @@ const SecondGrid = () => {
               <div>
                 <List
                   type="simple"
-                  fontSize="2xl:text-xl"
+                  fontSize="text-sm 2xl:text-xl"
                   listArr={[
                     "Roles, behaviors, activities, and attributes that society considers appropriate for boys/men and girls/women",
                     "While traditionally regarded as either male or female, gender identity is a fluid concept. It can change for someone at any given time. Gender exists along a continuum of traits that are neither entirely male nor female",
@@ -96,7 +96,7 @@ const SecondGrid = () => {
               <div>
                 <List
                   type="simple"
-                  fontSize="2xl:text-xl"
+                  fontSize="text-sm 2xl:text-xl"
                   listArr={[
                     "Encompasses all activities which gratify an individual’s sexual needs",
                     "May or may not be aligned with sexuality",

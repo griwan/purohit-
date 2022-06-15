@@ -2,7 +2,7 @@ import classNames from "classnames";
 export default function PotatoLayout(props) {
   return (
     <div
-      className={classNames("flex", String(props.class), {
+      className={classNames("flex", String(props.class || props.className), {
         "mx-auto": props.mxAuto,
         "mx-[1rem] 2xl:mx-[3rem]": props.space,
         "my-[1rem] 2xl:my-[3rem]": props.Cspace,

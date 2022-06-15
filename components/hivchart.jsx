@@ -1,6 +1,27 @@
+import React, { useState, useEffect } from "react";
+
 export default function HivChart(props) {
+  const [windowDimenion, detectHW] = useState({
+    winWidth: window.innerWidth,
+    winHeight: window.innerHeight,
+  });
+
+  const detectSize = () => {
+    detectHW({
+      winWidth: window.innerWidth,
+      winHeight: window.innerHeight,
+    });
+  };
+  useEffect(() => {
+    window.addEventListener("resize", detectSize);
+
+    return () => {
+      window.removeEventListener("resize", detectSize);
+    };
+  }, [windowDimenion]);
+
   return (
-    <div className="flex flex-col gap-8 2xl:gap-[2rem] text-base 2xl:text-2xl text-ui-text justify-center items-center relative w-max h-max">
+    <div className="flex flex-col gap-4 2xl:gap-[2rem] text-sm 2xl:text-2xl text-ui-text justify-center items-center relative w-max h-max">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="1.5"
@@ -11,7 +32,7 @@ export default function HivChart(props) {
         <path
           id="Path_230"
           data-name="Path 230"
-          d="M0,0H328.4"
+          d={windowDimenion.winWidth >= 1536 ? "M0,0H328.4" : "M70,0H270.4"}
           transform="translate(0.75) rotate(90)"
           fill="none"
           stroke="#2c4d72"
@@ -29,7 +50,7 @@ export default function HivChart(props) {
         <path
           id="Path_230"
           data-name="Path 230"
-          d="M0,0H328.4"
+          d={windowDimenion.winWidth >= 1536 ? "M0,0H328.4" : "M70,0H270.4"}
           transform="translate(0.75) rotate(90)"
           fill="none"
           stroke="#2c4d72"
@@ -45,7 +66,7 @@ export default function HivChart(props) {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="63"
-          height="10"
+          height="63"
           viewBox="0 0 63 10"
         >
           <rect
@@ -61,6 +82,7 @@ export default function HivChart(props) {
           width="63"
           height="63"
           viewBox="0 0 63 63"
+          className="m-3"
         >
           <g
             id="Group_177"

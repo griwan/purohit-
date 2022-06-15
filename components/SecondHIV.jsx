@@ -1,6 +1,27 @@
+import React, { useState, useEffect } from "react";
+
 export default function HIVReturns(props) {
+  const [windowDimenion, detectHW] = useState({
+    winWidth: window.innerWidth,
+    winHeight: window.innerHeight,
+  });
+
+  const detectSize = () => {
+    detectHW({
+      winWidth: window.innerWidth,
+      winHeight: window.innerHeight,
+    });
+  };
+  useEffect(() => {
+    window.addEventListener("resize", detectSize);
+
+    return () => {
+      window.removeEventListener("resize", detectSize);
+    };
+  }, [windowDimenion]);
+
   return (
-    <div className="flex flex-col gap-[1rem] text-2xl text-ui-text justify-center items-center relative w-full h-max">
+    <div className="flex flex-col gap-2 2xl:gap-[1rem] text-sm text-center 2xl:text-2xl text-ui-text justify-center items-center relative w-10/12 2xl:w-full h-max">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="1.5"
@@ -11,7 +32,7 @@ export default function HIVReturns(props) {
         <path
           id="Path_230"
           data-name="Path 230"
-          d="M0,0H328.4"
+          d={windowDimenion.winWidth >= 1536 ? "M0,0H328.4" : "M70,0H270.4"}
           transform="translate(0.75) rotate(90)"
           fill="none"
           stroke="#2c4d72"
@@ -29,7 +50,7 @@ export default function HIVReturns(props) {
         <path
           id="Path_230"
           data-name="Path 230"
-          d="M0,0H328.4"
+          d={windowDimenion.winWidth >= 1536 ? "M0,0H328.4" : "M70,0H270.4"}
           transform="translate(0.75) rotate(90)"
           fill="none"
           stroke="#2c4d72"
@@ -45,7 +66,7 @@ export default function HIVReturns(props) {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="63"
-          height="10"
+          height="63"
           viewBox="0 0 63 10"
         >
           <rect
@@ -61,6 +82,7 @@ export default function HIVReturns(props) {
           width="63"
           height="63"
           viewBox="0 0 63 63"
+          className="m-3"
         >
           <g
             id="Group_177"
@@ -91,19 +113,19 @@ export default function HIVReturns(props) {
       </div>
       <div className="flex">
         <div className="flex justify-between items-center">
-          <div className="bg-white p-1 mr-48 w-[25rem] text-right">
+          <div className="bg-white p-1 mr-auto 2xl:mr-48 w-[25rem] text-right">
             <span className="text-ui-blue">
               In 2018, 1.2 million individuals
-            </span>{' '}
+            </span>{" "}
             were eligible for PrEP medicines<sup>3</sup>
           </div>
           <div className="bg-white p-1">
             Test results/diagnosis<sup>1,2</sup>
           </div>
-          <div className="bg-white p-1 ml-48 w-[25rem] text-left">
+          <div className="bg-white p-1 ml-auto 2xl:ml-48 w-[25rem] text-left">
             <span className="text-red">
               In 2018, 86% of people living with HIV
-            </span>{' '}
+            </span>{" "}
             have been diagnosed<sup>3</sup>
           </div>
         </div>
@@ -113,26 +135,26 @@ export default function HIVReturns(props) {
       </div>
       <div>
         <div className="flex items-center justify-between">
-          <div className="bg-white pl-60 ml-60">
+          <div className="bg-white pl-60 2xl:ml-60">
             Evaluate prevention/treatment options<sup>1,2</sup>
           </div>
-          <div className="bg-white p-1 ml-28 w-[25rem] text-left">
+          <div className="bg-white p-1 -mr-10 2xl:ml-28 w-[25rem] text-left">
             <span className="text-red">
               In 2018, 86% of people living with HIV
-            </span>{' '}
+            </span>{" "}
             have been diagnosed<sup>3</sup>
           </div>
         </div>
       </div>
       <div className="flex justify-between items-center">
-        <div className="bg-white p-1 mr-48 w-[25rem] text-right">
+        <div className="bg-white p-1 mr-auto 2xl:mr-48 w-[25rem] text-right">
           <span className="text-ui-blue">…Only 18%</span> of those individuals
           are on PrEP medicines<sup>3</sup>
         </div>
         <div className="bg-white p-1">
           Engaged in clinical care<sup>2</sup>
         </div>
-        <div className="bg-white p-1 ml-48 w-[25rem] text-left">
+        <div className="bg-white p-1 ml-auto 2xl:ml-48 w-[25rem] text-left">
           …<span className="text-red">Only 56%</span> of those individuals have
           achieved viral suppression<sup>3</sup>
         </div>
