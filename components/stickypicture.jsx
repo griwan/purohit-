@@ -31,7 +31,7 @@ const StickyPicture = (props) => {
           />
         </div>
       </div>
-      <div className="basis-8/12 2xl:basis-7/12 px-2 mt-[2rem] 2xl:mt-[3.75rem]">
+      <div className="basis-8/12 2xl:basis-7/12 px-2 mt-[1.5rem] 2xl:mt-[3.75rem]">
         {props.children}
       </div>
     </div>

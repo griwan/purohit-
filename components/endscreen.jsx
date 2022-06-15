@@ -3,7 +3,7 @@ export default function EndScreen() {
   return (
     <section className="text-gray-600 body-font">
       <div className="p-5 mx-auto">
-        <div className="flex mx-auto -m-4">
+        <div className="flex justify-center -m-4">
           <div className="p-4 2xl:w-1/4  ">
             <div className="h-full flex flex-col items-center text-center">
               <a

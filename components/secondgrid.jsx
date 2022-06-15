@@ -6,7 +6,7 @@ import List from "./list";
 const Container = (props) => {
   return (
     <div className="flex justify-center">
-      <div className="w-[110rem]">{props.children}</div>
+      <div className="w-11/12">{props.children}</div>
     </div>
   );
 };

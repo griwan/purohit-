@@ -26,7 +26,7 @@ const SideListPicture = () => {
                 "Trust is earned, but takes time",
               ]}
             />
-            <div className="text-red mt-2 ml-8">
+            <div className="text-red mt-1 2xl:mt-2 ml-8">
               <i>
                 “Even if we didn’t know context, we were instructed to remember
                 that context existed. Everyone on earth [is] carrying around an

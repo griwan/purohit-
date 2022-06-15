@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import Image from "next/image";
 import React from "react";
 
@@ -75,10 +76,11 @@ const List = ({
             />
           </span>
           <span
-            className={
-              "align-middle table-cell pl-5 text-[1.5rem] font-sans leading-9 " +
-              (color && color === "red" ? "text-red" : "text-ui-blue")
-            }
+            className={classNames(
+              "align-middle table-cell pl-5 font-sans 2xl:leading-9 " +
+                (color && color === "red" ? "text-red" : "text-ui-blue"),
+              fontSize ? String(fontSize) : "text-base 2xl:text-2xl"
+            )}
           >
             {topic}
           </span>
