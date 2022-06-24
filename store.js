@@ -1,5 +1,5 @@
-import { atom } from "jotai";
-import { useAtomsDebugValue } from "jotai/devtools";
+import { atom } from 'jotai';
+import { useAtomsDebugValue } from 'jotai/devtools';
 
 export const navAtom = atom({
   module: 1,
@@ -16,8 +16,16 @@ export const navBehavior = atom({
 export const footerAtom = atom({
   enable: false,
   defaults: false,
-  className: "",
-  content: "",
+  className: '',
+  content: '',
+});
+
+export const overlayAtom = atom({
+  overlayEnable: false,
+  overlayType: 'h',
+  overlayLink: '',
+  overlayContent: '',
+  overlayImage: '',
 });
 
 export const DebugAtoms = () => {

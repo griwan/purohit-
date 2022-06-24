@@ -1,24 +1,45 @@
-import matter from "gray-matter";
-import Head from "next/head";
-import { useEffect, useState, useRef } from "react";
-import { serialize } from "next-mdx-remote/serialize";
-import { MDXRemote } from "next-mdx-remote";
-import { getFileData, getPaths } from "../../MDX";
-import { navAtom, footerAtom } from "../../store";
-import ReactAudioPlayer from "react-audio-player";
-import { useAtom } from "jotai";
+import matter from 'gray-matter';
+import Head from 'next/head';
+import { useEffect, useState, useRef } from 'react';
+import { serialize } from 'next-mdx-remote/serialize';
+import { MDXRemote } from 'next-mdx-remote';
+import { getFileData, getPaths } from '../../MDX';
+import { navAtom, footerAtom, overlayAtom } from '../../store';
+import ReactAudioPlayer from 'react-audio-player';
+import { useAtom } from 'jotai';
 
 const Slides = ({ mdxSource, frontMatter }) => {
   const audioRef = useRef(null);
-  const [nav, setNav] = useAtom(navAtom);
+  const [_nav, setNav] = useAtom(navAtom);
   const [geet, setGeet] = useState(null);
   const [_footer, setFooter] = useAtom(footerAtom);
-  const { title, module, section, next, prev, footer, footerContent, audio } =
-    frontMatter;
+  const [_overlay, setOverlay] = useAtom(overlayAtom);
+  const {
+    title,
+    module,
+    section,
+    next,
+    prev,
+    footer,
+    footerContent,
+    audio,
+    overlayEnable,
+    overlayLink,
+    overlayContent,
+    overlayImage,
+    overlayType,
+  } = frontMatter;
   useEffect(() => {
     setGeet(audio ?? null);
     setNav({ module, section, next, prev });
-    setFooter({ enable: footer, className: "", content: footerContent });
+    setFooter({ enable: footer, className: '', content: footerContent });
+    setOverlay({
+      overlayEnable,
+      overlayLink,
+      overlayImage,
+      overlayContent,
+      overlayType,
+    });
   }, [
     module,
     next,
@@ -29,6 +50,12 @@ const Slides = ({ mdxSource, frontMatter }) => {
     footer,
     footerContent,
     audio,
+    overlayEnable,
+    overlayLink,
+    overlayContent,
+    overlayImage,
+    overlayType,
+    setOverlay,
   ]);
   return (
     <div className="wrapper">

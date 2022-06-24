@@ -1,21 +1,31 @@
-import Head from "next/head";
-import { useEffect } from "react";
-import { navAtom, footerAtom } from "../store.js";
-import { useAtom } from "jotai";
-import Image from "next/image";
+import Head from 'next/head';
+import { useEffect } from 'react';
+import { navAtom, footerAtom, overlayAtom } from '../store.js';
+import { useAtom } from 'jotai';
+import Image from 'next/image';
+import Popup from '../components/Popup.jsx';
 
 export default function Home() {
   const [count, setCount] = useAtom(navAtom);
   const [footer, setFooter] = useAtom(footerAtom);
+  const [overlay, setOverlay] = useAtom(overlayAtom);
+
   useEffect(() => {
     setCount({
-      module: "Home",
+      module: 'Home',
       section: false,
-      next: "INTRO-1",
+      next: 'INTRO-1',
       prev: false,
     });
-    setFooter({ enable: true, className: "bg-white", defaults: true });
-  }, [setCount, setFooter]);
+    setFooter({ enable: true, className: 'bg-white', defaults: true });
+    setOverlay({
+      overlayEnable: true,
+      overlayType: 'h',
+      overlayImage: '/Sound.svg',
+      overlayContent:
+        'Turn on the audio device to be able to listen to this educational program.',
+    });
+  }, [setCount, setFooter, setOverlay]);
   return (
     <div className="bg-ui-light h-full">
       <Head>
@@ -37,14 +47,14 @@ export default function Home() {
             <span className="text-3rem md:text-5rem 2xl:text-7rem text-red">
               SERVICES
             </span>
-          </span>{" "}
+          </span>{' '}
           <br />
           <span className="text-1.5rem md:text-2rem 2xl:text-4rem">
             TO YOUR COMMUNITY
           </span>
           <p className="font-sans text-xl md:text-1.5rem 2xl:text-2.5rem pt-9">
-            {" "}
-            A Preparation Guide{" "}
+            {' '}
+            A Preparation Guide{' '}
           </p>
         </div>
       </main>
