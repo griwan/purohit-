@@ -14,7 +14,7 @@ const Popup = (props) => {
       <div className="flex justify-center items-center h-full w-full">
         <div className="relative bg-white w-[55%] h-[35%] text-black rounded-3xl p-3 2xl:p-6">
           <a className="closebtn cursor-pointer" onClick={hideOverlay}>
-            <img src="cross.svg" alt="cross" />
+            <img src="/cross.svg" alt="cross" />
           </a>
           <div className="flex h-full items-center gap-6">
             <div className="w-[40%] flex justify-center">
