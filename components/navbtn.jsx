@@ -4,12 +4,16 @@ import classNames from "classnames";
 import { navAtom, navBehavior } from "../store.js";
 import { useAtomValue, useAtom } from "jotai";
 import { useState, useEffect } from "react";
+import useKeyPress from "./useKeyPress.jsx";
 
 export default function NavButton(props) {
   const { prev, next } = useAtomValue(navAtom);
   const [behavior, setBehavior] = useAtom(navBehavior);
   const router = useRouter();
   const [alt, setAlt] = useState(false);
+
+  const prevPress = useKeyPress("ArrowLeft");
+  const nextPress = useKeyPress("ArrowRight");
 
   const routehandler = (route, i) => {
     if (!behavior.forward && i) return;
@@ -18,12 +22,18 @@ export default function NavButton(props) {
       router.push("/");
     } else router.push(`/slide/${encodeURIComponent(route)}`);
   };
+
+  useEffect(() => {
+    if (prevPress && prev) routehandler(prev, 0);
+    if (nextPress && next) routehandler(next, 1);
+  }, [prevPress, nextPress, next, prev]);
+
   return (
     <>
       {!!prev && (
         <div
           className={classNames(
-            "next rounded-full absolute left-50px top-66vh h-50px w-50px lg:h-79px lg:w-79px z-10"
+            "next rounded-full absolute left-50px top-66vh h-50px w-50px lg:h-79px lg:w-79px z-10 hover:cursor-pointer"
           )}
           onClick={() => routehandler(prev, 0)}
         >
@@ -54,7 +64,7 @@ export default function NavButton(props) {
       {!!next && (
         <div
           className={classNames(
-            "next rounded-full absolute right-50px top-66vh h-50px w-50px lg:h-79px lg:w-79px z-10",
+            "next rounded-full absolute right-50px top-66vh h-50px w-50px lg:h-79px lg:w-79px z-10 hover:cursor-pointer",
             {
               "text-red": behavior.forward,
               "text-[#CCCCCC]": !behavior.forward,
