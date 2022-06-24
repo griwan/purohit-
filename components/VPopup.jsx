@@ -13,7 +13,7 @@ const VPopup = (props) => {
     if (props.link) {
       setTimeout(() => {
         window.open(props.link, '_blank', 'noopener,noreferrer');
-      }, 5000);
+      }, 1000);
     }
   }, [props.link]);
 
