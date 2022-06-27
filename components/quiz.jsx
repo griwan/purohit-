@@ -22,7 +22,7 @@ export default function Quiz(props) {
   }, []);
 
   const checkAnswer = (e, i) => {
-    if (answered) return;
+    if (correct) return;
     setAnswered(true);
     if (e === optionsArray[answer]) {
       itemsRef.current.map((item, index) => {
