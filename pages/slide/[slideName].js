@@ -1,12 +1,13 @@
-import matter from 'gray-matter';
-import Head from 'next/head';
-import { useEffect, useState, useRef } from 'react';
-import { serialize } from 'next-mdx-remote/serialize';
-import { MDXRemote } from 'next-mdx-remote';
-import { getFileData, getPaths } from '../../MDX';
-import { navAtom, footerAtom, overlayAtom } from '../../store';
-import ReactAudioPlayer from 'react-audio-player';
-import { useAtom } from 'jotai';
+import matter from "gray-matter";
+import Head from "next/head";
+import { useEffect, useState, useRef } from "react";
+import { serialize } from "next-mdx-remote/serialize";
+import { MDXRemote } from "next-mdx-remote";
+import { getFileData, getPaths } from "../../MDX";
+import { navAtom, footerAtom, overlayAtom } from "../../store";
+import ReactAudioPlayer from "react-audio-player";
+import { useAtom } from "jotai";
+import classNames from "classnames";
 
 const Slides = ({ mdxSource, frontMatter }) => {
   const audioRef = useRef(null);
@@ -32,7 +33,7 @@ const Slides = ({ mdxSource, frontMatter }) => {
   useEffect(() => {
     setGeet(audio ?? null);
     setNav({ module, section, next, prev });
-    setFooter({ enable: footer, className: '', content: footerContent });
+    setFooter({ enable: footer, className: "", content: footerContent });
     setOverlay({
       overlayEnable,
       overlayLink,
@@ -58,7 +59,12 @@ const Slides = ({ mdxSource, frontMatter }) => {
     setOverlay,
   ]);
   return (
-    <div className="wrapper">
+    <div
+      className={classNames("overflow-y-auto overscroll-contain", {
+        "min-h-[79vh] max-h-[79vh]": footer,
+        "min-h-[94vh] max-h-[94vh]": !footer,
+      })}
+    >
       <Head>
         <title>{title}</title>
         <meta name="description" content={title} />

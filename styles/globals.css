@@ -26,7 +26,7 @@ a {
 }
 
 .picture-wrapper {
-  height: calc(100% - 16vh);
+  height: calc(79vh - 16vh);
 }
 
 .slide-wrapper {
@@ -46,4 +46,18 @@ a {
 
 .sticky-image {
   height: calc(100% - 2rem);
+}
+
+.same-text-height {
+  min-height: 4.5rem;
+}
+
+.long-and-truncated-with-child-corrected {
+  flex: 1;
+  min-width: 0; /* or some value */
+}
+.long-and-truncated-with-child-corrected p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
