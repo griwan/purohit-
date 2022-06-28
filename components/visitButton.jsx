@@ -11,7 +11,7 @@ const VisitButton = () => {
         onClick={() =>
           setOverlay({
             overlayEnable: true,
-            overlayLink: 'https://www.google.com',
+            overlayLink: 'https://aidsvu.org/',
           })
         }
         className="bg-[#395C7E] font-sans text-white font-bold py-4 px-28 rounded-full"

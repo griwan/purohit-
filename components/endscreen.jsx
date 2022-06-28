@@ -103,7 +103,7 @@ export default function EndScreen() {
           <div className="p-4 2xl:w-1/4  ">
             <div className="h-full flex flex-col items-center text-center">
               <a
-                href="www.google.com"
+                href="https://www.healthysexuals.com/"
                 className="font-sans underline py-2 font-semibold text-lg 2xl:text-3xl text-red"
               >
                 Gilead HIV
