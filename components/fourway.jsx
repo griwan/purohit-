@@ -18,7 +18,7 @@ export default function FourWay() {
                 ~3X
               </h2>
               <p className="mb-2 2xl:mb-4 text-base 2xl:text-2xl font-semibold">
-                higher in latinx men
+                higher in Latinx men
                 <br />
                 <span className="font-normal">than in White men</span>
               </p>
@@ -72,7 +72,7 @@ export default function FourWay() {
                 &gt;3X
               </h2>
               <p className="mb-2 2xl:mb-4 text-base 2xl:text-2xl font-semibold">
-                higher in latinx women
+                higher in Latinx women
                 <br /> <span className="font-normal">than in White women</span>
               </p>
             </div>

@@ -42,7 +42,7 @@ export default function TreatmentTools(props) {
       <p className="text-red font-sans font-medium text-base 2xl:text-2xl text-center w-10/12 2xl:w-6/12 mx-auto">
         Antiretroviral therapy has also provided incentive for people to get
         tested, to take steps to keep themselves and their partners healthy, and
-        to help prevent new infections3
+        to help prevent new infections<sup>3</sup>
       </p>
     </div>
   );

@@ -63,7 +63,7 @@ class Table extends React.Component {
           c1: true,
           c2: false,
           reference: "4, 6",
-          body: "(Genital warts, cervical cancer and anal cancer)",
+          body: "(Genital warts, cervical cancer, and anal cancer)",
         },
         {
           id: 7,
