@@ -73,7 +73,7 @@ export default function MAS38() {
           messages, to motivate individuals to remain HIV negative, and to
           support them to access medical (PEP and PrEP), social, and behavioral
           referral services, as indicated based on their risk and specific
-          situation1
+          situation<sup>1</sup>
         </p>
       </div>
       <div className="flex flex-col basis-1/2 items-center place-content-between gap-6 justify-around">
@@ -157,7 +157,7 @@ export default function MAS38() {
         <p>
           It is important to reinforce getting and staying on ART, with one
           recent study showing that those who initiated ART have an estimated
-          life expectancy approaching that of the general population2
+          life expectancy approaching that of the general population<sup>2</sup>
         </p>
       </div>
     </div>

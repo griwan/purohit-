@@ -33,7 +33,7 @@ export default function NavButton(props) {
       {!!prev && (
         <div
           className={classNames(
-            "next rounded-full absolute left-50px top-66vh h-50px w-50px 2xl:h-79px 2xl:w-79px z-10 hover:cursor-pointer"
+            "next rounded-full absolute left-50px top-66vh h-50px w-50px lg:h-79px lg:w-79px z-10 hover:cursor-pointer"
           )}
           onClick={() => routehandler(prev, 0)}
         >
@@ -64,7 +64,7 @@ export default function NavButton(props) {
       {!!next && (
         <div
           className={classNames(
-            "next rounded-full absolute right-50px top-66vh h-50px w-50px 2xl:h-79px 2xl:w-79px z-10 hover:cursor-pointer",
+            "next rounded-full absolute right-50px top-66vh h-50px w-50px lg:h-79px lg:w-79px z-10 hover:cursor-pointer",
             {
               "text-red": behavior.forward,
               "text-[#CCCCCC]": !behavior.forward,

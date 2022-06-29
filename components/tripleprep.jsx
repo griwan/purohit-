@@ -6,7 +6,7 @@ export default function TriplePrep(props) {
           <div className="p-4 2xl:w-1/3">
             <div className="h-max font-sans text-base bg-gray-100 bg-opacity-75 px-4 2xl:px-8 pt-8 2xl:pt-16 pb-12 2xl:pb-24 rounded-lg overflow-hidden relative">
               <h1 className="title-font text-2xl 2xl:text-3xl font-medium text-ui-text mb-3">
-                What are Protective Practices? <sup>1</sup>
+                What are Protective Practices?<sup>1</sup>
               </h1>
               <p className="leading-relaxed mb-3 text-sans">
                 Protective practices against HIV include{" "}
@@ -34,7 +34,7 @@ export default function TriplePrep(props) {
                 />
               </svg>
               <h1 className="title-font text-2xl 2xl:text-3xl text-xl font-medium text-[#395C7E] mb-3 pt-5">
-                What is PrEP? <sup>2,3</sup>
+                What is PrEP?<sup>2,3</sup>
               </h1>
               <p className="leading-relaxed mb-3 text-sans">
                 <span className="font-semibold text-[#395C7E]">
@@ -81,7 +81,7 @@ export default function TriplePrep(props) {
               </svg>
 
               <h1 className="title-font text-2xl 2xl:text-3xl text-xl font-medium text-red mb-3 pt-5">
-                What is PEP? <sup>4</sup>
+                What is PEP?<sup>4</sup>
               </h1>
               <p className="leading-relaxed mb-3 text-sans">
                 <span className="font-semibold text-red">
@@ -99,7 +99,7 @@ export default function TriplePrep(props) {
         <p className="text-red font-sans font-medium text-base 2xl:text-2xl text-center w-10/12 2xl:w-6/12 mx-auto">
           The recent availability of PrEP medicine helps provide an incentive
           for people to get tested to protect themselves and their partners
-          against HIV5
+          against HIV<sup>5</sup>
         </p>
       </div>
     </section>

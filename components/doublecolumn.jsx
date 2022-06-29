@@ -14,7 +14,7 @@ const DoubleColumn = () => {
           remind them the following about STIs:
         </div>
         <div className="text-base 2xl:text-2xl text-[#476A8A] 2xl:leading-7">
-          Some are curable. Most are treatable. All are manageable.1 A
+          Some are curable. Most are treatable. All are manageable.<sup>1</sup> A
           healthcare provider can help figure out what treatment is right.
         </div>
       </div>
