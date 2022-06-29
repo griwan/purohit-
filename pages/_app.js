@@ -34,7 +34,7 @@ import MAS38 from "../components/mas38";
 import ThreeColumnList from "../components/threecolumnlist";
 import ThreeText from "../components/threetext";
 import HivChart from "../components/hivchart";
-import SideListPicture from "../components/sideListPicture";
+import SideListPicture from "../components/sideListpicture";
 import CulturalHumility from "../components/cultural";
 import HIVReturns from "../components/SecondHIV";
 import Popup from "../components/Popup";
