@@ -30,7 +30,7 @@ export default function Home() {
     setOverlay({
       overlayEnable: true,
       overlayType: "h",
-      overlayImage: "/Sound.svg",
+      overlayImage: "/sound.svg",
       overlayContent:
         "Turn on the audio device to be able to listen to this educational program.",
     });

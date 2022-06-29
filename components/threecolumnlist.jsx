@@ -36,11 +36,11 @@ const ThreeColumnList = () => {
             />
           </div>
         </div>
-        <div className="flex flex-col gap-4 2xl:gap-8 w-full">
-          <div className="text-center text-[#707070] text-2xl 2xl:text-3xl">
+        <div className="grid grid-cols-12 gap-2 2xl:gap-4 w-full">
+          <div className="col-span-12 text-center text-[#707070] text-2xl 2xl:text-3xl">
             Examples of Using People-First Language<sup>2</sup>
           </div>
-          <div className="flex justify-between">
+          <div className="flex col-span-12 justify-between">
             <div className="text-red text-2xl 2xl:text-3xl">
               <b>Not Appropriate</b>
             </div>
@@ -49,51 +49,36 @@ const ThreeColumnList = () => {
             </div>
           </div>
 
-          <div className="flex justify-between">
-            <div className="text-red text-base 2xl:text-2xl">
-              HIV infected, HIV or AIDS patient, AIDS or HIV carrier, Positives
-              or HIVers
-            </div>
-            <div className="relative h-[1rem]">
-              <Image
-                src="/rightarrow.svg"
-                width="100%"
-                height="100%"
-                alt="arrow"
-              />
-            </div>
-            <div className="text-ui-blue text-base 2xl:text-2xl text-right">
-              Person living with HIV: PLHIV, PLWH; never use “infected” when
-              referring to a person
-            </div>
+          <div className=" col-span-5 text-red text-base 2xl:text-2xl">
+            HIV infected, HIV or AIDS patient, AIDS or HIV carrier, Positives or
+            HIVers
+          </div>
+          <div className="col-span-2 relative h-[1rem]">
+            <img src="/rightarrow.svg" alt="arrow" />
+          </div>
+          <div className="col-span-5 text-ui-blue text-base 2xl:text-2xl text-right">
+            Person living with HIV: PLHIV, PLWH; never use “infected” when
+            referring to a person
+          </div>
+          <div className="col-span-5 text-red text-base 2xl:text-2xl">
+            HIV Infection
+          </div>
+          <div className="col-span-2">
+            <img src="/rightarrow.svg" alt="arrow" />
+          </div>
+          <div className="col-span-5 text-ui-blue text-base 2xl:text-2xl text-right">
+            HIV transmission; diagnosed with HIV
           </div>
 
-          <div className="flex justify-between">
-            <div className="text-red text-base 2xl:text-2xl">HIV Infection</div>
-            <div>
-              <img src="/rightarrow.svg" alt="arrow" />
-            </div>
-            <div className="text-ui-blue text-base 2xl:text-2xl text-right">
-              HIV transmission; diagnosed with HIV
-            </div>
+          <div className="col-span-5 text-red text-base 2xl:text-2xl">
+            To catch AIDS, to contract AIDS, to transmit AIDS, to catch HIV
           </div>
-
-          <div className="flex justify-between">
-            <div className="text-red text-base 2xl:text-2xl">
-              To catch AIDS, to contract AIDS, to transmit AIDS, to catch HIV
-            </div>
-            <div className="relative">
-              <Image
-                src="/rightarrow.svg"
-                width="100%"
-                height="100%"
-                alt="arrow"
-              />
-            </div>
-            <div className="text-ui-blue text-base 2xl:text-2xl text-right">
-              Living with AIDS; now living with HIV (AIDS is a condition that
-              results from HIV progression)
-            </div>
+          <div className="col-span-2 relative">
+            <img src="/rightarrow.svg" alt="arrow" />
+          </div>
+          <div className="col-span-5 text-ui-blue text-base 2xl:text-2xl text-right">
+            Living with AIDS; now living with HIV (AIDS is a condition that
+            results from HIV progression)
           </div>
         </div>
       </div>
