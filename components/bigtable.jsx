@@ -105,7 +105,7 @@ class Table extends React.Component {
           <div>Visual Examination</div>
           <div>Urine Sample</div>
           <div>Cotton Swab</div>
-          <div>Blood Draw or Finger Pick</div>
+          <div>Blood Draw or Finger Prick</div>
           <div>Oral Fluid Sample</div>
         </div>
         <div className="body">{rows}</div>

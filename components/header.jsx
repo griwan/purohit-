@@ -1,5 +1,3 @@
-import classNames from "classnames";
-
 export default function Header(props) {
   return (
     <header

@@ -64,7 +64,7 @@ export default function MAS31(props) {
         </div>
       </div>
       <div className="text-center text-red font-sans text-base 2xl:text-1.5rem leading-9 mt-10 mb-7 font-medium w-[80%] mx-auto">
-        The UNAIDS goal of 90% of all PLWH being diagnosed reflects the
+        The United Nations Programme on HIV/AIDS goal of 90% of all PLWH being diagnosed reflects the
         essential role of HIV testing in helping to end the HIV epidemic
         <sup>2</sup>
       </div>
