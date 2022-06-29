@@ -79,3 +79,8 @@ a {
 .ml15 {
   margin-left: 15%;
 }
+
+.visit-image {
+  min-width: 71px;
+  height: 64px;
+}
