@@ -4,6 +4,7 @@ specifiers:
   '@mdx-js/react': ^2.1.1
   '@vime/core': ^5.3.1
   '@vime/react': ^5.3.1
+  '@windicss/plugin-scrollbar': ^1.2.3
   classnames: ^2.3.1
   eslint: 8.17.0
   eslint-config-next: 12.1.6
@@ -32,6 +33,7 @@ dependencies:
   sharp: 0.30.6
 
 devDependencies:
+  '@windicss/plugin-scrollbar': 1.2.3
   eslint: 8.17.0
   eslint-config-next: 12.1.6_qwqcuvhue6diaz4jqbkm5dp3pa
   windicss-webpack-plugin: 1.7.3
@@ -439,6 +441,10 @@ packages:
       windicss: 3.5.4
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /@windicss/plugin-scrollbar/1.2.3:
+    resolution: {integrity: sha512-+cqv1pEmaNPITeBJ/lO6tc8IjBzRhQ+V9G8r249MMXivYoxUO4DtModBrRGHVvBgsYZgPXDsIv2jqtxc4NqYEg==}
     dev: true
 
   /@windicss/plugin-utils/1.8.4:

@@ -2,21 +2,22 @@ export default function MAS38() {
   return (
     <div className="flex items-center justify-center gap-2 2xl:gap-8 font-sans text-xs 2xl:text-2xl text-center mx-auto w-[66%] text-ui-text">
       <div className="flex flex-col basis-1/2 items-center place-content-between gap-6 justify-around">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="63"
-          height="10"
-          viewBox="0 0 63 10"
-          className="mb-12"
-        >
-          <rect
-            id="Rectangle_44"
-            data-name="Rectangle 44"
+        <div className="h-[63px] w-[63px] flex items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
             width="63"
             height="10"
-            fill="#395c7e"
-          />
-        </svg>
+            viewBox="0 0 63 10"
+          >
+            <rect
+              id="Rectangle_44"
+              data-name="Rectangle 44"
+              width="63"
+              height="10"
+              fill="#395c7e"
+            />
+          </svg>
+        </div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="40"

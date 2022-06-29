@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="79.635" height="79.35"
+  viewBox="0 0 79.635 79.35">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_41" data-name="Rectangle 41" width="79.635" height="79.35" fill="#476a8a" stroke="#466a89"
+        stroke-width="0.25" />
+    </clipPath>
+  </defs>
+  <g id="Group_149" data-name="Group 149" clip-path="url(#clip-path)">
+    <path id="Path_159" data-name="Path 159"
+      d="M114.717,28.235V79.327h-8.211v-53.5L132.22,0l5.211,5.474-22.714,22.76m-6.328-1.786v51H112.9V27.995L135.483,5.359,132.37,2.417,108.389,26.449"
+      transform="translate(-65.248 -0.001)" fill="#476a8a" stroke="#466a89" stroke-width="0.25" />
+    <path id="Path_160" data-name="Path 160"
+      d="M19.588,6.316,24.93.816,50.34,26.67V79.85H42.327v-50.6L19.588,6.316M44.234,28.754V78.028h4.315V27.368L25.208,3.336,21.9,6.482,44.234,28.754"
+      transform="translate(-12 -0.5)" fill="#476a8a" stroke="#466a89" stroke-width="0.25" />
+    <path id="Path_161" data-name="Path 161"
+      d="M133.534,43.037,156.2,20.392l5.236,5.226L138.661,48.405l-5.127-5.368m23.172-20.331L136.27,43.135l2.391,2.832,20.613-20.608-2.568-2.652"
+      transform="translate(-81.805 -12.493)" fill="#476a8a" stroke="#466a89" stroke-width="0.25" />
+    <path id="Path_162" data-name="Path 162"
+      d="M0,25.592l5.1-5.135L27.771,43.108l-5.221,5.027L0,25.592m2.436.125L22.5,45.828l2.933-2.739L5.165,22.812,2.436,25.717"
+      transform="translate(0 -12.532)" fill="#476a8a" stroke="#466a89" stroke-width="0.25" />
+  </g>
+</svg>

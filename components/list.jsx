@@ -33,7 +33,7 @@ const List = ({
           ) : (
             <span
               className={
-                "text-gray-500 ml-2 font-sans " +
+                "text-gray-500 table-cell ml-2 font-sans " +
                 (String(fontSize) ? String(fontSize) : "text-[1.5rem]")
               }
             >

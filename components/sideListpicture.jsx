@@ -40,7 +40,7 @@ const SideListPicture = () => {
 
           <div className="w-[auto] mx-auto my-auto">
             <img
-              className="h-[266px] w-[240px] 2xl:h-[532px] 2xl:w-[480px]"
+              className="h-[240px] w-[240px] 2xl:h-[480px] 2xl:w-[480px]"
               src="/multystuff.png"
             />
           </div>

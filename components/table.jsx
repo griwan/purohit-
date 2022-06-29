@@ -6,7 +6,12 @@ const Row = ({ title, c1, c2, reference, body }) => (
     <div>
       {title}
       <sup>{reference}</sup>
-      <span>{body}</span>
+      {!!body && (
+        <span>
+          <br />
+          {body}
+        </span>
+      )}
     </div>
     <div>
       {c1 && <Image src="/tabletick.svg" alt="tick" height={20} width={20} />}

@@ -1,7 +1,6 @@
 import { defineConfig } from "windicss/helpers";
 
 import colors from "windicss/colors";
-import plugin from "windicss/plugin";
 
 export default defineConfig({
   extract: {
@@ -33,4 +32,8 @@ export default defineConfig({
       },
     },
   },
+  plugins: [
+    require("@windicss/plugin-scrollbar"),
+    require("windicss/plugin/aspect-ratio"),
+  ],
 });

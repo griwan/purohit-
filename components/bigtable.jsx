@@ -1,12 +1,17 @@
-import Image from 'next/image';
-import React from 'react';
+import Image from "next/image";
+import React from "react";
 
 const Row = ({ title, c1, c2, c3, c4, c5, reference, body }) => (
   <div className="row">
     <div>
       {title}
       <sup>{reference}</sup>
-      <span>{body}</span>
+      {!!body && (
+        <span>
+          <br />
+          {body}
+        </span>
+      )}
     </div>
     <div>
       {c1 ? (
@@ -43,42 +48,42 @@ class Table extends React.Component {
       data: [
         {
           id: 1,
-          title: 'Chlamydia',
+          title: "Chlamydia",
           c2: true,
           c3: true,
         },
         {
           id: 2,
-          title: 'Gonorrhea',
+          title: "Gonorrhea",
           c3: true,
           c2: true,
         },
         {
           id: 4,
-          title: 'Herpes',
+          title: "Herpes",
           c3: true,
           c4: true,
         },
         {
           id: 5,
-          title: 'HIV',
+          title: "HIV",
           c4: true,
           c5: true,
         },
         {
           id: 6,
-          title: 'HPV',
+          title: "HPV",
           c1: true,
-          body: '(Genital warts, cervical cancer and anal cancer)',
+          body: "(Genital warts, cervical cancer and anal cancer)",
         },
         {
           id: 7,
-          title: 'Syphilis',
+          title: "Syphilis",
           c4: true,
         },
         {
           id: 8,
-          title: 'Trichomoniasis',
+          title: "Trichomoniasis",
           c1: false,
           c3: true,
         },

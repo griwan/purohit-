@@ -19,7 +19,7 @@ export default function MAS33() {
             <div className="text-3xl 2xl:text-3.75rem font-bold font-serif">
               69<sup>%</sup>
             </div>
-            <div className="text-[10px] 2xl:text-1.5rem 2xl:leading-6 font-sans max-w-[12rem] 2xs:max-w-[9rem]">
+            <div className="text-[10px] 2xl:text-1.3rem 2xl:leading-6 font-sans max-w-[12rem] 2xs:max-w-[9rem]">
               Gay, bisexual, and other MSM
             </div>
           </div>

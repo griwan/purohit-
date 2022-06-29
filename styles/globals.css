@@ -30,7 +30,7 @@ a {
 }
 
 .slide-wrapper {
-  height: calc(100% - 16vh);
+  height: calc(79vh - 16vh);
 }
 
 .line-gap {
@@ -60,4 +60,22 @@ a {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.lens-image {
+  height: 167px;
+  min-width: 167px;
+}
+
+.nat-image {
+  height: 110px;
+  min-width: 130px;
+}
+
+.mt44 {
+  margin-top: 44px;
+}
+
+.ml15 {
+  margin-left: 15%;
 }

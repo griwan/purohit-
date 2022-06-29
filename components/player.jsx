@@ -10,16 +10,32 @@ import {
   TimeProgress,
   ScrubberControl,
   FullscreenControl,
+  usePlayer,
 } from "@vime/react";
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
+import Router from "next/router";
 
 function VPlayer(props) {
-  const player = useRef(null);
+  const reff = useRef(null);
+  const player = usePlayer(reff);
+  const [value, setValue] = useState(null);
+
+  const enterFullscreen = () => {
+    player.enterFullscreen();
+  };
+  const pausePlayer = () => {
+    player.pause();
+  };
+  useEffect(() => {
+    setValue(props.src);
+  }, []);
+
+  // Router.reload(window.location.pathname);
   return (
     <div className="w-33vw 2xl:w-36vw mx-auto pt-5">
-      <Player ref={player}>
+      <Player ref={reff}>
         <Video crossOrigin="">
-          <source data-src={props.src} type="video/mp4" />
+          <source data-src={value} type="video/mp4" />
         </Video>
         <DefaultUi noControls>
           <Scrim />
@@ -30,13 +46,17 @@ function VPlayer(props) {
           </Controls>
 
           <Controls pin="center" justify="center">
-            <PlaybackControl hideTooltip style={{ "--vm-control-scale": 4 }} />
+            <PlaybackControl
+              onClick={enterFullscreen}
+              hideTooltip
+              style={{ "--vm-control-scale": 4 }}
+            />
           </Controls>
 
           <Controls fullWidth pin="bottomLeft" hideWhenPaused>
             <ControlSpacer />
             <TimeProgress />
-            <FullscreenControl />
+            <FullscreenControl onClick={pausePlayer} />
           </Controls>
           <Controls fullWidth hideWhenPaused>
             <ScrubberControl />

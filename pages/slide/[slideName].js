@@ -60,10 +60,13 @@ const Slides = ({ mdxSource, frontMatter }) => {
   ]);
   return (
     <div
-      className={classNames("overflow-y-auto overscroll-contain", {
-        "min-h-[79vh] max-h-[79vh]": footer,
-        "min-h-[94vh] max-h-[94vh]": !footer,
-      })}
+      className={classNames(
+        "overflow-y-auto overscroll-contain scrollbar-thin scrollbar-thumb-neutral-400 scrollbar-track-neutral-200",
+        {
+          "min-h-[79vh] max-h-[79vh]": footer,
+          "min-h-[94vh] max-h-[94vh]": !footer,
+        }
+      )}
     >
       <Head>
         <title>{title}</title>

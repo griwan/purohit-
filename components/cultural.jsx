@@ -55,7 +55,7 @@ const CulturalHumility = () => {
             <div className="relative text-center">
               <img src="/s5-1-3.svg" className="m-auto mb-2 2xl:mb-6" />
             </div>
-            <div className="text-left text-red mt-2 2xl:mt-6 font-sans text-base 2xl:text-2xl leading-0 pr-[2.18rem] font-medium -m-10px">
+            <div className="text-left text-red mt-2 2xl:mt-6 font-sans text-base 2xl:text-2xl leading-0 font-medium -m-10px">
               Organizational behaviors
             </div>
           </div>

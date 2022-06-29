@@ -17,7 +17,7 @@ export default function TreatmentTools(props) {
             </p>
           </div>
         </div>
-        <div className="2xl:w-1/3 2xl:mb-0 mb-6 p-4 h-max text-center">
+        <div className="2xl:w-1/3 2xl:mb-0 mb-6 p-2 2xl:p-4 h-full text-center justify-center items-center flex">
           <Image
             src="/Group_501.svg"
             alt="Group 501"

@@ -3,7 +3,7 @@ export default function TriplePrep(props) {
     <section className="text-gray-600 body-font">
       <div className="container p-5 mx-auto">
         <div className="flex -m-4">
-          <div className="p-4 2xl:w-1/3">
+          <div className="p-4 2xl:w-1/3 items-center flex">
             <div className="h-max font-sans text-base bg-gray-100 bg-opacity-75 px-4 2xl:px-8 pt-8 2xl:pt-16 pb-12 2xl:pb-24 rounded-lg overflow-hidden relative">
               <h1 className="title-font text-2xl 2xl:text-3xl font-medium text-ui-text mb-3">
                 What are Protective Practices? <sup>1</sup>
@@ -19,20 +19,22 @@ export default function TriplePrep(props) {
           </div>
           <div className="p-4 2xl:w-1/3">
             <div className="font-sans text-base 2xl:text-2xl px-4 2xl:px-8 pt-8 2xl:pt-16 pb-12 2xl:pb-24 rounded-lg overflow-hidden relative">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="63"
-                height="10"
-                viewBox="0 0 63 10"
-              >
-                <rect
-                  id="Rectangle_108"
-                  data-name="Rectangle 108"
+              <div className="h-[63px] w-[63px] flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
                   width="63"
                   height="10"
-                  fill="#395c7e"
-                />
-              </svg>
+                  viewBox="0 0 63 10"
+                >
+                  <rect
+                    id="Rectangle_108"
+                    data-name="Rectangle 108"
+                    width="63"
+                    height="10"
+                    fill="#395c7e"
+                  />
+                </svg>
+              </div>
               <h1 className="title-font text-2xl 2xl:text-3xl text-xl font-medium text-[#395C7E] mb-3 pt-5">
                 What is PrEP? <sup>2,3</sup>
               </h1>
