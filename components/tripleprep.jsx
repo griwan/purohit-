@@ -42,7 +42,7 @@ export default function TriplePrep(props) {
                 <span className="font-semibold text-[#395C7E]">
                   Pre-exposure prophylaxis (PrEP)
                 </span>
-                PrEP means taking prescription medicine{" "}
+                &nbsp;PrEP means taking prescription medicine{" "}
                 <span className="font-semibold text-[#395C7E]">
                   as directed
                 </span>
@@ -89,7 +89,7 @@ export default function TriplePrep(props) {
                 <span className="font-semibold text-red">
                   Postexposure prophylaxis (PEP)
                 </span>
-                PEP means taking HIV medicines very soon{" "}
+                &nbsp;PEP means taking HIV medicines very soon{" "}
                 <span className="font-semibold text-red">
                   (within 72 hours)
                 </span>{" "}

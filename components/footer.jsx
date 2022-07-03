@@ -17,22 +17,14 @@ const Footer = (props) => {
       <div
         className={classNames("flex justify-between items-center px-10 h-full")}
       >
-        {defaults ? (
-          <Image
-            className="basis-10/12"
-            src="/cvs_pharmacy.png"
-            alt="logo"
-            width={255}
-            height={33}
-          />
-        ) : (
+        {
           <div
             className="text-left basis-10/12 text-[7px] 2xl:text-[12px]"
             dangerouslySetInnerHTML={{
               __html: forward ? content : "",
             }}
           />
-        )}
+        }
         <div className="basis-2/12 mt-4">
           <Image
             src="/Gilead_HIV_2020_RedGrey.png"

@@ -26,7 +26,7 @@ const HIV = () => {
         <div className="flex flex-col basis-3/12 items-center">
           <div className="h-[10rem] flex items-center font-serif">V</div>
           <div className="text-1.5rem text-red mb-[1rem] font-bold">
-            Virus <sup>1</sup>
+            Virus<sup>1</sup>
           </div>
           <div className="text-base 2xl:text-2xl text-gray-500 2xl:w-[25rem]">
             A virus is a tiny particle that causes infections by entering a cell
