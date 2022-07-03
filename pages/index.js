@@ -61,10 +61,7 @@ export default function Home() {
           <span className="text-1.5rem md:text-2rem 2xl:text-4rem">
             TO YOUR COMMUNITY
           </span>
-          <p className="font-sans text-xl md:text-1.5rem 2xl:text-2.5rem pt-9">
-            {" "}
-            A Preparation Guide{" "}
-          </p>
+          <p className="font-sans fluid40 pt-9"> A Preparation Guide </p>
         </div>
       </main>
       {!!audio && (

@@ -80,14 +80,12 @@ export default function Quiz(props) {
 
   return (
     <div className="flex flex-col justify-center items-center picture-wrapper">
-      <div
-        text="ui-text xl"
-        font="sans"
-        w="max"
-        h="max"
-        className="relative bg-white"
-      >
-        <div p="10px 2xl:20px" border="solid t-2 l-2 ui-text">
+      <div text="ui-text xl" font="sans" w="max" h="max" className="quiz-pad">
+        <div
+          p="10px 2xl:20px"
+          border="solid t-2 l-2 ui-text"
+          className="relative bg-white"
+        >
           <h2 font="bold" m="b-5px 2xl:b-10px">
             {title}
           </h2>
@@ -96,18 +94,20 @@ export default function Quiz(props) {
               return (
                 <div
                   key={index}
-                  className="flex items-center py-2 h-52px 2xl:h-62px"
+                  className="flex items-center py-2 h-32px 2xl:h-62px"
                   onClick={() => checkAnswer(option, index)}
                 >
                   <input type="radio" name="option" value={option} />
                   <img
                     src="/blank.svg"
                     ref={(el) => (itemsRef.current[index] = el)}
-                    height={46}
-                    width={46}
+                    className="h-[24px] w-[24px] 2xl:h-[46px] 2xl:w-[46px]"
                     alt="radio"
                   />
-                  <label p="l-1rem" className="text-base 2xl:text-2xl">
+                  <label
+                    p="l-0.5rem 2xl:l-1rem"
+                    className="text-base 2xl:text-2xl"
+                  >
                     {option}
                   </label>
                 </div>

@@ -84,3 +84,13 @@ a {
   min-width: 71px;
   height: 64px;
 }
+
+@media (min-width: 1280px) {
+  .oral-span {
+    display: block;
+  }
+}
+
+.quiz-pad {
+  padding-top: 65px;
+}
