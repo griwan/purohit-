@@ -19,7 +19,7 @@ export default function MAS33() {
             <div className="text-3xl 2xl:text-3.75rem font-bold font-serif">
               69<sup>%</sup>
             </div>
-            <div className="text-[10px] 2xl:text-1.3rem 2xl:leading-6 font-sans max-w-[12rem] 2xs:max-w-[9rem]">
+            <div className="text-[10px] 2xl:text-1.3rem h-min-[1.875rem] 2xl:h-min-[4.5rem] 2xl:leading-6 font-sans max-w-[12rem] 2xs:max-w-[9rem]">
               Gay, bisexual, and other MSM
             </div>
           </div>
@@ -36,7 +36,7 @@ export default function MAS33() {
             <div className="text-3xl 2xl:text-3.75rem font-bold font-serif">
               42<sup>%</sup>
             </div>
-            <div className="text-[10px] 2xl:text-1.5rem 2xl:leading-6 font-sans max-w-[9rem]">
+            <div className="text-[10px] 2xl:text-1.5rem h-min-[1.875rem] 2xl:h-min-[4.5rem] 2xl:leading-6 font-sans max-w-[9rem]">
               Black/African American
             </div>
           </div>
@@ -53,8 +53,8 @@ export default function MAS33() {
             <div className="text-3xl 2xl:text-3.75rem font-bold font-serif">
               29<sup>%</sup>
             </div>
-            <div className="text-[10px] 2xl:text-lg 2xl:leading-6 font-sans max-w-[9rem]">
-              Hispanic/Latinx
+            <div className="text-[10px] 2xl:text-2xl h-min-[1.875rem] 2xl:h-min-[4.5rem] 2xl:leading-6 font-sans max-w-[9rem]">
+              Hispanic / Latinx
             </div>
           </div>
         </div>
@@ -70,7 +70,7 @@ export default function MAS33() {
             <div className="text-3xl 2xl:text-3.75rem font-bold font-serif">
               7<sup>%</sup>
             </div>
-            <div className="text-[10px] 2xl:text-1.5rem 2xl:leading-6 font-sans max-w-[9rem]">
+            <div className="text-[10px] 2xl:text-1.5rem h-min-[1.875rem] 2xl:h-min-[4.5rem] 2xl:leading-6 font-sans max-w-[9rem]">
               Persons who inject drugs
             </div>
           </div>
@@ -87,7 +87,7 @@ export default function MAS33() {
             <div className="text-3xl 2xl:text-3.75rem font-bold font-serif">
               2<sup>%</sup>
             </div>
-            <div className="text-[10px] 2xl:text-1.5rem 2xl:leading-6 font-sans max-w-[9rem]">
+            <div className="text-[10px] 2xl:text-1.5rem h-min-[1.875rem] 2xl:h-min-[4.5rem] 2xl:leading-6 font-sans max-w-[9rem]">
               Transgender individuals
             </div>
           </div>

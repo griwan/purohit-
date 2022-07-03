@@ -9,16 +9,15 @@ class MyDocument extends Document {
     return (
       <Html className="scroll-smooth">
         <Head>
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
             rel="preconnect"
-            href="https://fonts.gstatic.com"
+            href="https://fonts.bunny.net"
             crossOrigin="true"
           />
           <link
-            href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            href="https://fonts.bunny.net/css?family=libre-baskerville:400,700,400i,700i|montserrat:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
             rel="stylesheet"
-          ></link>
+          />
         </Head>
         <body>
           <Main />

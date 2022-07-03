@@ -20,35 +20,45 @@ audio: "/audio/ModuleA-cell51.mp3"
 </SubHeader>
 
 <br />
-  <SingleLayout w80>
-<PotatoLayout class='justify-around justify-items-center content-center items-center gap-[1rem] mt-[2rem]'>
-  <PotatoLayout class="mx-2 flex-col font-sans" space>
-   <img src='/millionpeople.svg' style={{height:'110px', width: '266px'}}/>
-<TextBlock
-top='An estimated'
-hero='1.06'
-subhero=' million'
-bottom='people were living with HIV at the end of 2019<sup>1,a<sup>'
-/>
-
-  </PotatoLayout>
-  <PotatoLayout class="flex-col font-sans" space>
-    <img src='/Group_301.png' style={{height:'110px',width:'130px'}} alt='icon'/>
-<TextBlock
-top='Approximately'
-hero='37,000'
-subhero=' people'
-bottom='received an HIV diagnosis in 2019<sup>1,a<sup>'
-/>
-  </PotatoLayout>
-  <PotatoLayout class="flex-col font-sans" space>
-    <img src='/Group_524.png' style={{height:'110px',width:'130px'}} alt='icon'/>
-  <TextBlock
-top='Approximately'
-hero='1 in 7'
-subhero=' PLWH'
-bottom='did not know they had HIV at the end of 2018<sup>2,b<sup>'
-/>
-  </PotatoLayout>
-</PotatoLayout>
-  </SingleLayout>
+<SingleLayout w80>
+  <Division className="flex gap-4 mt-[2rem]">
+    <PotatoLayout class="flex-col font-sans">
+      <img
+        src="/millionpeople.svg"
+        style={{ height: "110px", width: "266px" }}
+      />
+      <TextBlock
+        top="An estimated"
+        hero="1.06"
+        subhero=" million"
+        bottom="people were living with HIV at the end of 2019<sup>1,a<sup>"
+      />
+    </PotatoLayout>
+    <PotatoLayout class="flex-col font-sans">
+      <img
+        src="/Group_301.png"
+        style={{ height: "110px", width: "130px" }}
+        alt="icon"
+      />
+      <TextBlock
+        top="Approximately"
+        hero="37,000"
+        subhero=" people"
+        bottom="received an HIV diagnosis in 2019<sup>1,a<sup>"
+      />
+    </PotatoLayout>
+    <PotatoLayout class="flex-col font-sans">
+      <img
+        src="/Group_524.png"
+        style={{ height: "110px", width: "130px" }}
+        alt="icon"
+      />
+      <TextBlock
+        top="Approximately"
+        hero="1 in 7"
+        subhero=" PLWH"
+        bottom="did not know they had HIV at the end of 2018<sup>2,b<sup>"
+      />
+    </PotatoLayout>
+  </Division>
+</SingleLayout>
