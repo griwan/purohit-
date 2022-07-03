@@ -106,7 +106,7 @@ export default function NavBar() {
         <section className="sm:text-xs lg:text-lg flex flex-1 justify-center z-10">
           Section 3
         </section>
-        <div
+        {/* <div
           className={classNames({
             [styles.arrow]: true,
             [styles.arrowright]: true,
@@ -114,13 +114,22 @@ export default function NavBar() {
             'bg-[#395C7E]': section === 3,
             'bg-[#6A6A6A]': section !== 3,
           })}
-        ></div>
+        ></div> */}
       </div>
     </div>
   );
 
   const ModuleB = () => (
     <div className={moduleBClass}>
+      <div
+        className={classNames({
+          [styles.arrow]: true,
+          [styles.arrowleft]: true,
+          'bg-[#395C7E]': module === 2,
+          'bg-[#395C7E]': section === 3,
+          'bg-[#6A6A6A]': section !== 3,
+        })}
+      ></div>
       {/* <div className={introClassArrowRight}></div> */}
       <section className="flex flex-1 justify-center"></section>
       <section className="sm:text-xs lg:text-lg lg:text-lg flex flex-1 justify-center z-10">
@@ -178,7 +187,7 @@ export default function NavBar() {
         <section className="sm:text-xs lg:text-lg flex flex-1 justify-center z-10">
           Section 6
         </section>
-        <div
+        {/* <div
           className={classNames({
             [styles.arrow]: true,
             [styles.arrowright]: true,
@@ -186,7 +195,7 @@ export default function NavBar() {
             'bg-[#A9253F]': section === 6,
             'bg-[#3E3E3E]': section !== 6,
           })}
-        ></div>
+        ></div> */}
       </div>
     </div>
   );
@@ -213,9 +222,18 @@ export default function NavBar() {
           <div className={introClass}>Intro</div>
           <ModuleA />
           <ModuleBSection />
-          {/* hehe */}
-          <div className="text-xs lg:text-lg bg-[#333333] w-1/12 flex justify-center items-center">
-            <span className="z-10 -mr-5">End</span>
+
+          <div className="text-xs lg:text-lg bg-[#333333] w-1/12 flex items-center">
+            <div
+              className={classNames({
+                [styles.arrow]: true,
+                [styles.arrowleft]: true,
+                'bg-[#A9253F]': module === 3,
+                'bg-[#A9253F]': section === 6,
+                'bg-[#3E3E3E]': section !== 6,
+              })}
+            ></div>
+            <span className="flex-1 text-center">End</span>
           </div>
         </div>
       </>
