@@ -13,7 +13,7 @@ export default function NavBar() {
 
   // intro class start
   let introClass = classNames(
-    'sm:text-xs lg:text-lg bg-hex-075985 w-1/12 flex justify-center items-center z-10',
+    'text-xs lg:text-lg bg-hex-075985 w-1/12 flex justify-center items-center z-10',
     { 'bg-[#999999]': module !== 1, 'bg-[#6E95AD]': module === 1 }
   );
 
@@ -51,7 +51,7 @@ export default function NavBar() {
     <div className={moduleClass}>
       <div className={introClassArrow}></div>
       <section className="flex flex-1 justify-center"></section>
-      <section className="sm:text-xs lg:text-lg flex flex-1 justify-center">
+      <section className="text-xs lg:text-lg flex flex-1 justify-center">
         MODULE A
       </section>
       <section className="flex flex-1 justify-center"></section>
@@ -67,7 +67,7 @@ export default function NavBar() {
         })}
       >
         <div className={introClassArrow}></div>
-        <section className="sm:text-xs lg:text-lg flex flex-1 justify-center z-10">
+        <section className="text-xs lg:text-lg flex flex-1 justify-center z-10">
           Section 1
         </section>
       </div>
@@ -85,7 +85,7 @@ export default function NavBar() {
             'bg-[#838383]': section !== 1,
           })}
         ></div>
-        <section className="sm:text-xs lg:text-lg flex flex-1 justify-center z-10">
+        <section className="text-xs lg:text-lg flex flex-1 justify-center z-10">
           Section 2
         </section>
       </div>
@@ -103,7 +103,7 @@ export default function NavBar() {
             'bg-[#767676]': section !== 2,
           })}
         ></div>
-        <section className="sm:text-xs lg:text-lg flex flex-1 justify-center z-10">
+        <section className="text-xs lg:text-lg flex flex-1 justify-center z-10">
           Section 3
         </section>
         {/* <div
@@ -127,12 +127,13 @@ export default function NavBar() {
           [styles.arrowleft]: true,
           'bg-[#395C7E]': module === 2,
           'bg-[#395C7E]': section === 3,
-          'bg-[#6A6A6A]': section !== 3,
+          'bg-[#6A6A6A]':
+            (module === 2 && !section) || (!module && section !== 3),
         })}
       ></div>
       {/* <div className={introClassArrowRight}></div> */}
       <section className="flex flex-1 justify-center"></section>
-      <section className="sm:text-xs lg:text-lg lg:text-lg flex flex-1 justify-center z-10">
+      <section className="text-xs lg:text-lg lg:text-lg flex flex-1 justify-center z-10">
         MODULE B
       </section>
       <section className="flex flex-1 justify-center"></section>
@@ -148,7 +149,7 @@ export default function NavBar() {
         })}
       >
         <div className={introClassArrowMB}></div>
-        <section className="sm:text-xs lg:text-lg flex flex-1 justify-center z-10">
+        <section className="text-xs lg:text-lg flex flex-1 justify-center z-10">
           Section 4
         </section>
       </div>
@@ -166,7 +167,7 @@ export default function NavBar() {
             'bg-[#5A5A5A]': section !== 4,
           })}
         ></div>
-        <section className="sm:text-xs lg:text-lg flex flex-1 justify-center z-10">
+        <section className="text-xs lg:text-lg flex flex-1 justify-center z-10">
           Section 5
         </section>
       </div>
@@ -184,7 +185,7 @@ export default function NavBar() {
             'bg-[#4C4C4C]': section !== 5,
           })}
         ></div>
-        <section className="sm:text-xs lg:text-lg flex flex-1 justify-center z-10">
+        <section className="text-xs lg:text-lg flex flex-1 justify-center z-10">
           Section 6
         </section>
         {/* <div
@@ -207,7 +208,7 @@ export default function NavBar() {
           <div className={introClass}>Intro</div>
           <ModuleASection />
           <ModuleB />
-          <div className="sm:text-xs lg:text-lg bg-[#333333] w-1/12 flex justify-center items-center">
+          <div className="text-xs lg:text-lg bg-[#333333] w-1/12 flex justify-center items-center">
             <span className="z-10 -mr-5">End</span>
           </div>
         </div>
@@ -248,7 +249,7 @@ export default function NavBar() {
         <ModuleB />
         <div
           className={classNames(
-            'sm:text-xs lg:text-lg bg-[#333333] w-1/12 flex justify-center items-center',
+            'text-xs lg:text-lg bg-[#333333] w-1/12 flex justify-center items-center',
             {
               'bg-[#001D4A]': module === 4,
             }

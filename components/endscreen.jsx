@@ -21,7 +21,7 @@ export default function EndScreen() {
               />
               <div className="w-full flex justify-left text-left gap-1">
                 <Image
-                  src="/healthysexual.png"
+                  src="/HealthysexualQRCode.png"
                   height={60}
                   width={60}
                   alt="qr"
