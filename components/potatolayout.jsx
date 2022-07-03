@@ -4,7 +4,7 @@ export default function PotatoLayout(props) {
     <div
       className={classNames("flex", String(props.class || props.className), {
         "mx-auto": props.mxAuto,
-        "mx-[1rem] 2xl:mx-[3rem]": props.space,
+        "mx-[2rem] 2xl:mx-[3rem]": props.space,
         "my-[1rem] 2xl:my-[3rem]": props.Cspace,
         "gap-[1rem] 2xl:gap-[2rem]": props.gap,
         "w-4/5": props.w80,

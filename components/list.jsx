@@ -25,7 +25,7 @@ const List = ({
           {raw ? (
             <span
               className={
-                "text-gray-500 ml-2 font-sans " +
+                "text-gray-500 table-cell ml-2 font-sans " +
                 (fontSize ? String(fontSize) : "text-base 2xl:text-2xl")
               }
               dangerouslySetInnerHTML={{ __html: topic }}

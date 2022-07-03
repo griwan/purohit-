@@ -1,0 +1,26 @@
+/* Here’s the math, credit Mike Riethmuller:
+
+body {
+  font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
+} */
+
+:root {
+  --maxVP: 1920;
+  --minVP: 640;
+  --minVPx: 640px;
+  --full: 100vw;
+  --diff: calc(var(--maxVP) - var(--minVP));
+  --ratio: ((var(--full) - var(--minVPx)) / var(--diff));
+}
+
+.fluid40 {
+  font-size: clamp(16px, calc(16px + (40 - 16) * var(--ratio)), 40px);
+}
+
+.fluid-header {
+  font-size: clamp(18px, calc(18px + (44 - 18) * var(--ratio)), 44px);
+}
+
+.fluid-subheader {
+  font-size: clamp(18px, calc(18px + (30 - 18) * var(--ratio)), 30px);
+}

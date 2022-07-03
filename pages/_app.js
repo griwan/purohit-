@@ -2,6 +2,7 @@ import "windi.css";
 import "../styles/globals.css";
 import "../styles/table.css";
 import "../styles/overlay.css";
+import "../styles/responsive.css";
 import "@vime/core/themes/default.css";
 
 import { Suspense } from "react";
