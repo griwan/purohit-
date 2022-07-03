@@ -94,3 +94,11 @@ a {
 .quiz-pad {
   padding-top: 65px;
 }
+
+.eqdiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  text-align: center;
+}

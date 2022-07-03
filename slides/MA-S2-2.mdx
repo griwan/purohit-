@@ -10,32 +10,29 @@ footerContent: <p><span class="font-bold">Reference&#58; 1.</span> American Sexu
 audio: "/audio/ModuleA-cell28.mp3"
 ---
 
+{/* prettier-ignore */}
 <Header title="ok">
-  <span className="text-red">WHAT KINDS OF HIV TESTING</span>ARE AVAILABLE?
-  <sup>1</sup>
+  <span className="text-red">WHAT KINDS OF HIV TESTING</span> ARE AVAILABLE?<sup>1</sup>
 </Header>
 
-  <br/>
-<PotatoLayout class='justify-center justify-items-center content-center items-center gap-[2.5rem] mt-[2rem] 2xl:mt-[5rem]' Cspace>
-  <PotatoLayout class="mx-2 text-center flex-col items-center font-sans" space>
+<PotatoLayout class='justify-center gap-[2.5rem] mt-[2rem] 2xl:mt-[5rem]' Cspace space>
+  <Division className="eqdiv font-sans">
     <Pic src='/nat_1.svg' className='nat-image' />
     <PP className="text-red text-2xl 2xl:text-3xl font-medium">Nucleic acid tests (NATs)</PP>
     <PP className="text-lg 2xl:text-2xl text-ui-text">look for HIV in the blood.</PP>
-  </PotatoLayout>
-  <PotatoLayout class="text-center flex-col items-center font-sans" space>
+  </Division>
+  <Division className="eqdiv font-sans">
     <Pic src='/nat_2.svg' className="nat-image" />
     <PP className="text-red text-2xl 2xl:text-3xl font-medium">Antibody Tests</PP>
     <p className="text-lg 2xl:text-2xl text-ui-text">Check for HIV antibodies in blood or saliva.</p>
 
-  </PotatoLayout>
-  <PotatoLayout class="text-center flex-col items-center font-sans" space>
+  </Division>
+  <Division className="eqdiv font-sans">
   <Pic src='/nat_3.svg' className='nat-image' />
     <p className="text-red text-2xl 2xl:text-3xl font-medium">Antigen/antibody Tests</p>
     <p className="text-lg 2xl:text-2xl text-ui-text">Can detect both HIV antibodies and HIV antigens (parts of virus) in the blood.</p>
-
-  </PotatoLayout>
+  </Division>
 </PotatoLayout>
-<SingleLayout>
 <SingleLayout>
 <List
     type="simple"
@@ -43,5 +40,4 @@ audio: "/audio/ModuleA-cell28.mp3"
     list="Most rapid tests and home tests are antibody tests
     A rapid antibody test done with a finger prick or oral fluid provides results in 30 minutes or less, while an antibody self-test with saliva provides results within 20 minutes"
   />
-  </SingleLayout>
   </SingleLayout>
