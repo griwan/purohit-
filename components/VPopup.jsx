@@ -1,6 +1,6 @@
-import { useAtom } from 'jotai';
-import React, { useEffect, useState } from 'react';
-import { overlayAtom } from '../store';
+import { useAtom } from "jotai";
+import React, { useEffect, useState } from "react";
+import { overlayAtom } from "../store";
 
 const VPopup = (props) => {
   const [_overlay, setOverlay] = useAtom(overlayAtom);
@@ -12,7 +12,7 @@ const VPopup = (props) => {
   useEffect(() => {
     if (props.link) {
       setTimeout(() => {
-        window.open(props.link, '_blank', 'noopener,noreferrer');
+        window.open(props.link, "_blank", "noopener,noreferrer");
       }, 1000);
     }
   }, [props.link]);

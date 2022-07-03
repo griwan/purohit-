@@ -12,7 +12,7 @@ export default function MAS31(props) {
               className="text-3xl 2xl:text-3.75rem font-bold font-serif text-ui-blue absolute top-1/2 left-1/2"
               style={{ transform: "translate(-45%, -35%)" }}
             >
-              90<sup>%</sup>
+              95<sup>%</sup>
             </div>
           </div>
           <div className="text-center text-ui-blue mt-6 font-sans text-base 2xl:text-1.5rem leading-9">
@@ -32,7 +32,7 @@ export default function MAS31(props) {
               className="text-3xl 2xl:text-3.75rem font-bold font-serif text-ui-blue absolute top-1/2 left-1/2"
               style={{ transform: "translate(-45%, -35%)" }}
             >
-              90<sup>%</sup>
+              95<sup>%</sup>
             </div>
           </div>
           <div className="text-center text-ui-blue font-sans text-base 2xl:text-1.5rem leading-9">
@@ -52,7 +52,7 @@ export default function MAS31(props) {
               className="text-3xl 2xl:text-3.75rem font-bold font-serif text-ui-blue absolute top-1/2 left-1/2"
               style={{ transform: "translate(-45%, -35%)" }}
             >
-              90<sup>%</sup>
+              95<sup>%</sup>
             </div>
           </div>
           <div className="text-center text-ui-blue mt-6 font-sans text-base 2xl:text-1.5rem leading-9">
@@ -64,8 +64,9 @@ export default function MAS31(props) {
         </div>
       </div>
       <div className="text-center text-red font-sans text-base 2xl:text-1.5rem leading-9 mt-10 mb-7 font-medium w-[80%] mx-auto">
-        The United Nations Programme on HIV/AIDS goal of 90% of all PLWH being diagnosed reflects the
-        essential role of HIV testing in helping to end the HIV epidemic
+        The United Nations Programme on HIV/AIDS goal of 95% of all PLWH being
+        diagnosed reflects the essential role of HIV testing in helping to end
+        the HIV epidemic
         <sup>2</sup>
       </div>
     </div>

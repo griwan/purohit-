@@ -24,3 +24,11 @@ body {
 .fluid-subheader {
   font-size: clamp(18px, calc(18px + (30 - 18) * var(--ratio)), 30px);
 }
+
+.fluid2xl {
+  font-size: clamp(12px, calc(12px + (24 - 12) * var(--ratio)), 24px);
+}
+
+.fluid3xl {
+  font-size: clamp(18px, calc(18px + (30 - 18) * var(--ratio)), 30px);
+}
