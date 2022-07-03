@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from 'next/image';
 export default function EndScreen() {
   return (
     <section className="text-gray-600 body-font">
@@ -7,10 +7,12 @@ export default function EndScreen() {
           <div className="p-4 2xl:w-1/4  ">
             <div className="h-full flex flex-col items-center text-center">
               <a
+                target="_blank"
+                rel="noreferrer"
                 href="https://www.healthysexuals.com/"
                 className="font-sans underline py-2 font-semibold text-base 2xl:text-3xl text-red"
               >
-                HealthySexual<sup>&#174;</sup>{" "}
+                HealthySexual<sup>&#174;</sup>{' '}
               </a>
               <img
                 alt="team"
@@ -19,7 +21,7 @@ export default function EndScreen() {
               />
               <div className="w-full flex justify-left text-left gap-1">
                 <Image
-                  src="/GileadHIVCode.png"
+                  src="/healthysexual.png"
                   height={60}
                   width={60}
                   alt="qr"
@@ -27,6 +29,8 @@ export default function EndScreen() {
                 <p className="text-xs 2xl:text-base">
                   Scan the QR code or visit <br />
                   <a
+                    target="_blank"
+                    rel="noreferrer"
                     className="text-red underline"
                     href="https://www.healthysexuals.com/"
                   >
@@ -39,6 +43,8 @@ export default function EndScreen() {
           <div className="p-4 2xl:w-1/4  ">
             <div className="h-full flex flex-col items-center text-center">
               <a
+                target="_blank"
+                rel="noreferrer"
                 href="https://helpstopthevirus.com/"
                 className="font-sans underline py-2 font-semibold text-lg 2xl:text-3xl text-red"
               >
@@ -59,6 +65,8 @@ export default function EndScreen() {
                 <p className="text-xs 2xl:text-base">
                   Scan the QR code or visit <br />
                   <a
+                    target="_blank"
+                    rel="noreferrer"
                     className="text-red underline"
                     href="https://helpstopthevirus.com/"
                   >
@@ -71,6 +79,8 @@ export default function EndScreen() {
           <div className="p-4 2xl:w-1/4  ">
             <div className="h-full flex flex-col items-center text-center">
               <a
+                target="_blank"
+                rel="noreferrer"
                 href="https://www.hivtestnow.com/"
                 className="font-sans underline py-2 font-semibold text-lg 2xl:text-3xl text-red"
               >
@@ -91,6 +101,8 @@ export default function EndScreen() {
                 <p className="text-xs 2xl:text-base">
                   Scan the QR code or visit <br />
                   <a
+                    target="_blank"
+                    rel="noreferrer"
                     className="text-red underline"
                     href="https://www.hivtestnow.com/"
                   >
@@ -103,6 +115,8 @@ export default function EndScreen() {
           <div className="p-4 2xl:w-1/4  ">
             <div className="h-full flex flex-col items-center text-center">
               <a
+                target="_blank"
+                rel="noreferrer"
                 href="https://www.healthysexuals.com/"
                 className="font-sans underline py-2 font-semibold text-lg 2xl:text-3xl text-red"
               >
@@ -124,10 +138,12 @@ export default function EndScreen() {
                 <p className="text-xs 2xl:text-base">
                   Scan the QR code or visit <br />
                   <a
+                    target="_blank"
+                    rel="noreferrer"
                     className="text-red underline"
-                    href="https://www.healthysexuals.com/"
+                    href="https://www.gileadhiv.com/"
                   >
-                    https://www.healthysexuals.com/
+                    https://www.gileadhiv.com/
                   </a>
                 </p>
               </div>
