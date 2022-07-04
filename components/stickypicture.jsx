@@ -31,10 +31,11 @@ const StickyPicture = (props) => {
           />
           <section
             className={classNames(
-              'absolute bottom-[2rem] text-[12px] text-ui-text font-serif mix-blend-darken',
+              'absolute bottom-[2rem] text-[12px] text-ui-text font-serif ',
               {
                 'right-[2.5rem]': !props.direction,
                 'left-[2.5rem]': props.direction,
+                'hidden':props.hidden
               }
             )}
           >
