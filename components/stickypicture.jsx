@@ -38,7 +38,7 @@ const StickyPicture = (props) => {
               }
             )}
           >
-            Actor Potrail
+            Actor Portrayal
           </section>
         </div>
       </div>
