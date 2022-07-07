@@ -5,12 +5,12 @@ export default function TriplePrep(props) {
         <div className="flex -m-4">
           <div className="p-4 2xl:w-1/3 items-center flex">
             <div className="h-max font-sans text-base bg-gray-100 bg-opacity-75 px-4 2xl:px-8 pt-8 2xl:pt-16 pb-12 2xl:pb-24 rounded-lg overflow-hidden relative">
-              <h1 className="title-font text-2xl 2xl:text-3xl font-medium text-ui-text mb-3">
-                What are Protective Practices?<sup>1</sup>
+              <h1 className="title-font text-2xl 2xl:text-3xl font-medium text-ui-text mb-3 break-normal">
+                What are Protective&nbsp;<span style={{display:'inline-block'}}>Practices?<sup>1</sup></span>
               </h1>
               <p className="leading-relaxed mb-3 text-sans">
                 Protective practices against HIV include{" "}
-                <span className="text-semibold">HIV testing, condom use</span>
+                <span className="text-semibold">HIV testing, condom use </span>
                 during sex, and
                 <span className="text-semibold"> not sharing needles </span> or
                 other injection equipment for those who use substances
@@ -42,9 +42,9 @@ export default function TriplePrep(props) {
                 <span className="font-semibold text-[#395C7E]">
                   Pre-exposure prophylaxis (PrEP)
                 </span>
-                &nbsp;PrEP means taking prescription medicine{" "}
+                &nbsp;means taking prescription medicine{" "}
                 <span className="font-semibold text-[#395C7E]">
-                  as directed
+                  as directed&nbsp;
                 </span>
                 before HIV exposure to help lower the chance of getting HIV
               </p>
@@ -89,7 +89,7 @@ export default function TriplePrep(props) {
                 <span className="font-semibold text-red">
                   Postexposure prophylaxis (PEP)
                 </span>
-                &nbsp;PEP means taking HIV medicines very soon{" "}
+                &nbsp;means taking HIV medicines very soon{" "}
                 <span className="font-semibold text-red">
                   (within 72 hours)
                 </span>{" "}

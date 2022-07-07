@@ -69,7 +69,7 @@ export default function MAS38() {
         <p>
           It is important to{" "}
           <span className="text-[#395C7E] font-medium">
-            reinforce HIV prevention
+            reinforce HIV prevention&nbsp;
           </span>
           messages, to motivate individuals to remain HIV negative, and to
           support them to access medical (PEP and PrEP), social, and behavioral

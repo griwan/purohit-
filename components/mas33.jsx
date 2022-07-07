@@ -54,7 +54,7 @@ export default function MAS33() {
               29<sup>%</sup>
             </div>
             <div className="text-[10px] 2xl:text-2xl h-min-[1.875rem] 2xl:h-min-[4.5rem] 2xl:leading-6 font-sans max-w-[9rem]">
-              Hispanic / Latinx
+              Hispanic/Latinx
             </div>
           </div>
         </div>

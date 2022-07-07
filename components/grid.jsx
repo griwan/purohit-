@@ -42,7 +42,7 @@ const Grid = () => {
           </div>
           <div>
             Testing is the first step towards engaging in{" "}
-            <span className="text-red">treatment and preventative</span>
+            <span className="text-red">treatment and preventative </span>
             HIV care
           </div>
         </div>

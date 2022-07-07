@@ -47,7 +47,7 @@ function VPlayer(props) {
 
           <Controls pin="center" justify="center">
             <PlaybackControl
-              onClick={enterFullscreen}
+              // onClick={enterFullscreen}
               hideTooltip
               style={{ "--vm-control-scale": 4 }}
             />

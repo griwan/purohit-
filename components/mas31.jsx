@@ -35,7 +35,7 @@ export default function MAS31(props) {
               95<sup>%</sup>
             </div>
           </div>
-          <div className="text-center text-ui-blue font-sans text-base 2xl:text-1.5rem leading-9">
+          <div className="text-center text-ui-blue mt-6 font-sans text-base 2xl:text-1.5rem leading-9">
             of all people diagnosed with HIV will be receiving{" "}
             <b>
               sustained ART<sup>2</sup>

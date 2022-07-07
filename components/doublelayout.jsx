@@ -18,8 +18,8 @@ const DoubleLayout = (props) => {
           "width-[80%]": !props.w9,
         })}
       >
-        <div className="2xl:w-full w-[50%]">{props.children[0]}</div>
-        <div className="2xl:w-full w-[50%]">{props.children[1]}</div>
+        <div className="2xl:w-full w-[50%] min-h-[400px]">{props.children[0]}</div>
+        <div className="2xl:w-full w-[50%] min-h-[400px]">{props.children[1]}</div>
         <div
           className={classNames("absolute h-full w-full -z-2", {
             visible: props.bg,

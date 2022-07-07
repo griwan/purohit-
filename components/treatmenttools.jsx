@@ -12,7 +12,7 @@ export default function TreatmentTools(props) {
             <p>
               {" "}
               ART means taking antiretroviral therapy as prescribed, which can
-              lower the amount of virus in the body so that it cannot be
+              <span className="text-red">lower the amount of virus</span> in the body so that it cannot be
               measured by a lab test
             </p>
           </div>
@@ -33,7 +33,7 @@ export default function TreatmentTools(props) {
             <p className="text-red pb-2">Treatment as Prevention</p>
             <p>
               TasP means minimizing the risk of passing HIV to partners through
-              sex by getting to and staying undetectable,a also called U=U
+              sex by<span className="text-red"> getting to and staying undetectable,<sup>a</sup></span> also called U=U
               (undetectable equals untransmittable)
             </p>
           </div>

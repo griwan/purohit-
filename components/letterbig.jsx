@@ -13,9 +13,9 @@ const LetterBig = (props) => {
         }
       )}
     >
-      <div className="flex justify-center ml-2rem">
+      <div className="flex justify-center">
         {letters.map((letter, index) => (
-          <span className="mr-4rem" key={index}>
+          <span className="text-center min-w-[10%]" key={index}>
             {letter}
           </span>
         ))}

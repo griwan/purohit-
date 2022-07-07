@@ -35,7 +35,8 @@ const StickyPicture = (props) => {
               {
                 'right-[2.5rem]': !props.direction,
                 'left-[2.5rem]': props.direction,
-                'hidden':props.hidden
+                'hidden':props.hidden,
+                'text-white':props.dark
               }
             )}
           >

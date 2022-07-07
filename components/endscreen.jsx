@@ -117,7 +117,7 @@ export default function EndScreen() {
               <a
                 target="_blank"
                 rel="noreferrer"
-                href="https://www.healthysexuals.com/"
+                href="https://www.gileadhiv.com/"
                 className="font-sans underline py-2 font-semibold text-lg 2xl:text-3xl text-red"
               >
                 Gilead HIV

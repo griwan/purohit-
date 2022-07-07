@@ -13,26 +13,30 @@ const Section = ({ section, color }) => {
       title: "Section 2",
       heading: "THE BASICS OF HIV AND STI TESTING",
       image: "/section2.png",
-      actor:false
+      actor:false,
+
     },
     section3: {
       title: "Section 3",
       heading: "HIGHLIGHTING THE NEED FOR HIV TESTING",
       image: "/section3.png",
-      actor:true
+      actor:true,
+      right:true
     },
     section4: {
       title: "Section 4",
       heading: "BARRIERS TO CARE IN THE HIV COMMUNITY",
       image: "/section4.png",
-      actor:true
+      actor:true,
+      right:true
     },
     section5: {
       title: "Section 5",
       heading:
         "ADDRESSING BARRIERS TO CARE THROUGH CULTURAL HUMILITY AND CULTURAL RESPONSIVENESS",
       image: "/section5.png",
-      actor:true
+      actor:true,
+      right:true
     },
     section6: {
       title: "Section 6",
@@ -46,6 +50,7 @@ const Section = ({ section, color }) => {
   let heading = contents[section].heading;
   let image = contents[section].image;
   let actor = contents[section].actor;
+  let right = contents[section].right;
 
   return (
     <div className="flex flex-col items-center h-[94vh]">
@@ -62,7 +67,9 @@ const Section = ({ section, color }) => {
       <div className="flex-1 h-full w-full relative">
         <Image src={image} alt="section" layout="fill" objectFit="cover" />
         {actor &&
-        <h1 style={{position:'absolute',bottom:'0',left:'0',padding:'20px'}}>Actor Portrayal.</h1>
+        right?
+        <h1 style={{position:'absolute',bottom:'0',right:'0',padding:'20px'}}>Actor Portrayal.</h1>
+        :<h1 style={{position:'absolute',bottom:'0',left:'0',padding:'20px'}}>Actor Portrayal.</h1>
         }
         </div>
     </div>
